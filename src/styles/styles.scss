@@ -1,0 +1,28 @@
+@import 'variables';
+@import 'mixins';
+
+@import 'reset';
+@import 'root';
+@import 'body';
+@import 'a';
+@import 'viewport';
+@import 'fonts';
+@import 'animations';
+@import 'utility';
+
+@import 'components';
+@import 'mixins';
+@import 'forms';
+// @import './functions';
+
+@import 'buttons';
+@import 'typography';
+@import 'page';
+@import 'view';
+@import 'module';
+@import 'scroll-content';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+// @import './vendors';
+
+// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
