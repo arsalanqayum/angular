@@ -1,193 +1,5 @@
 @import "./styles";
 
-// On screens that are 600px or less, set the css property
-@media screen and (max-width: 600px) {
-    .desktop{
-        display: none;
-    }
-    .mobile{
-        display: block !important;
-    }
-.mob{
-    height: 67px !important;
-}
-.hide-collection-cell{
-    display: none !important;
-}
-.left-image{
-    margin: 39px 0px;
-}
-.left-image-text{
-    margin-top: 10% !important;
-    width: 40%;
-    margin-left: 5% !important;
-
-}
-.left-image-text-title{
-    font-size: 50px !important;
-}
-.left-image-text-subtitle{
-    font-size: 25px !important;
-    margin: 50px 0px;
-    width: 340px;
-}
-.left-image-text-btn{
-    padding: 10px 20px 10px 25px;
-    font-size: 20px !important;
-    word-spacing: 4px;
-}
-.title-sm{
-    position:relative !important;
-    top:20px !important;
-    font-size: 22px !important;
-    margin-top: 0px !important;
-    line-height: 5px !important;
-}
-.title-lg{
-    font-size: 26px !important;
-}
-.membership{
-    background: linear-gradient(7deg, #FF675C 10.58%, #FF5CF4 75.18%) !important;
-    height: 108vh !important;
-    flex-direction: column !important;
-}
-.membership-title{
-    font-size: 46px !important;
-    width: 250px;
-    line-height: 52px;
-    top:5% !important;
-}
-.membership-text{
-    top: 15% !important;
-    margin-left: 5% !important;
-}
-.membership-subtitle{
-    font-size: 24px !important;
-}
-.right-image-text-btn{
-    background: #0A091A;
-    border-radius: 45px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px !important;
-    line-height: 110%;
-    color: #FFFFFF;
-    padding: 15px 40px;
-}
-.membership-right{
-    background-size: 87% 62% !important;
-    background-repeat: no-repeat !important;
-}
-.culture-text{
-    top: 5% !important;
-}
-.culture-title{
-    font-size: 35px !important;
-    line-height: 130% !important;
-}
-.culture-subtitle{
-    font-size: 22px !important;
-    line-height: 110% !important;
-    width: 360px;
-}
-.culture-btn{
-    display: block;
-    margin: 15px 0px;
-}
-.create-with-us{
-    width: 250px;
-}
-.create-img{
-    margin-left: 20px;
-}
-.join-our-discord{
-    margin-left: 0px !important;
-    width: 250px;
-}
-.collection-left{
-    margin-top: 35px;
-}
-.stageverse-content{
-    margin-left: 5% !important;
-}
-.stageverse-text{
-    width: 258px !important;
-    font-size: 26px !important;
-    line-height: 25px;
-}
-.download-container-hide{
-    display: none !important;
-}
-.download-container{
-    display: block !important;
-    background: linear-gradient(180deg, #F4FF5C 0%, #5CFFB8 35.61%, #665BFF 64.25%, #FF5CF4 100%);
-    height: 330px;
-}
-.download-img-btn{
-    display: block;
-    position: relative;
-    left: 30px;
-    top: 40px;
-    margin: 17px 0px;
-}
-.donwnload-sub-text{
-    font-family: 'Druk Wide Bold';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 130%;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    font-feature-settings: 'ss04' on, 'ss02' on, 'ss01' on;
-    color: #0A091A;
-    margin-top: 60px;
-    width: 350px;
-    margin-left: 30px;
-}
-.footer-sm{
-    margin-top: 50px;
-    flex-direction: column !important;
-}
-.footer-social-media{
-    flex-direction: column;
-}
-.logo-container{
-    margin-top: 0px !important;
-    margin-left: 5% !important;
-}
-.footer-big-text{
-    font-size: 30px !important;
-    padding-bottom: 0px !important;
-}
-.footer-sub-heading{
-    font-size: 24px !important;
-}
-.footer-sub-contianer{
-    margin-top: 10% !important;
-    width: 82%;
-    margin-left: 30px;
-}
-.footer-p-text{
-    font-size: 24px !important;
-    margin-top: 40px;
-}
-.footer-small-text{
-    width: 85%;
-    font-size: 20px;
-}
-.social-media-footer-container{
-    margin-top: 40px;
-    margin-bottom: 30px;
-}
-.social-media-footer{
-    padding-right: 30px;
-}
-.h3{
-    font-size: 28px !important;
-    line-height: 40px !important;
-}
-}
-// ================================================================== End of mobile View ==============================================================================================================
 .mobile{
     display: none;
 }
@@ -195,6 +7,18 @@
     display: flex;
     flex-direction: row;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+  }
 .download-container{
     display: none;
 }
@@ -202,7 +26,7 @@
     width: 71%;
 }
 .logo-container{
-    margin-left: 10%;
+    margin-left: 5%;
     width: 20%;
     margin-top: 40px;
 }
@@ -219,7 +43,7 @@
     margin-left: 20px;
 }
 .mt-2{
-    margin-top:13.5vh;
+    margin-top:11.5vh;
 }
 .title-sm{
     height: 15px;
@@ -242,10 +66,11 @@
     text-transform: uppercase;
 }
 .title-container{
-    width: 90%;
+    width: 94%;
     margin-left:auto;
     margin-right: auto;
     padding: 30px 0px;
+    margin-top: 13.5vh;
 }
 .left-image{
 
@@ -256,14 +81,27 @@
     background-size:100% 100%;
     object-fit: cover;
     background-repeat: no-repeat;
-    height: 140vh;
+   
 
 
 }
+.cornor-image{
+    background: url(/assets/images/ui-assets/cornor-background.png) no-repeat;
+    background-position: bottom left;
+}
+.cluture-image-women{
+    background-image: url('/assets/images/ui-assets/culture-women.png');
+    background-position: bottom;
+    background-size: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 58vh;
+}
 .left-image-text{
-    margin-top: 6%;
+    margin-top: 7%;
     width: 40%;
-    margin-left: 10%;
+    margin-left: 6%;
 
 }
 .left-image-text-title{
@@ -277,10 +115,15 @@
     font-feature-settings: 'ss04' on, 'ss02' on, 'ss01' on;
     color: #FFFFFF;
 }
+.left-image-text-box{
+    width: 70%;
+    margin-left: 6%;
+    margin-top: 5%;
+}
 .left-image-text-subtitle{
     font-style: normal;
     font-weight: normal;
-    font-size: 1.3vw;
+    font-size: 2vw;
     line-height: 110%;
     letter-spacing: -0.01em;
     font-feature-settings: 'ss02' on;
@@ -396,7 +239,7 @@
 .simulation-content{
     position: relative;
     top: 57vh;
-    margin-left: 10%;
+    margin-left: 6%;
 }
 .p{
     font-style: normal;
@@ -437,7 +280,7 @@
   position: relative;
   top: 57vh;
   text-align: left;
-  margin-left: 10%;
+  margin-left: 6%;
 }
 .sumilation-content-3{
     position: relative;
@@ -449,7 +292,7 @@
     position: relative;
     top: 58vh;
    text-align: left;
-   margin-left: 10%;
+   margin-left: 6%;
 }
 .example-collection-cell {
     display: -webkit-box;
@@ -495,17 +338,15 @@
 .muse-content{
     position: relative;
     top: 66vh;
-    margin-left: 10%;
+    margin-left: 6%;
 }
 
 .culture{
-    background: linear-gradient(
-0deg
-, #665AFF, #665AFF),url('/assets/images/ui-assets/cornor-background.png'); height: 60vh;
+    background: linear-gradient(0deg, #665AFF, #665AFF),url('/assets/images/ui-assets/cornor-background.png'); height: 60vh;
 }
 .culture-text{
     position: relative;
-    top: 30%;
+    top: 21%;
     text-align: left;
     margin-left: 5%;
     width: 60vw;
@@ -566,7 +407,7 @@ color: #FFFFFF;
     position: relative;
     top: 20%;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 6%;
 }
 .stageverse-content{
     position: relative;
@@ -588,7 +429,7 @@ color: #FFFFFF;
 }
 .btn-position{
     position: relative;
-    top: 2.5vh;
+    top: 5vh;
 }
 .S{
     font-style: normal;
@@ -781,3 +622,192 @@ color: #FFFFFF;
     line-height: 1.7rem;
     width: 80.9%;
 }
+// ==================================================mobile view css=================================================>>>>>>>>>>>>>>
+// On screens that are 600px or less, set the css property
+@media screen and (max-width: 600px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block !important;
+    }
+.mob{
+    height: 67px !important;
+}
+.hide-collection-cell{
+    display: none !important;
+}
+.left-image{
+    margin: 39px 0px;
+}
+.left-image-text{
+    margin-top: 10% !important;
+    width: 40%;
+    margin-left: 5% !important;
+
+}
+.left-image-text-title{
+    font-size: 50px !important;
+}
+.left-image-text-subtitle{
+    font-size: 25px !important;
+    margin: 50px 0px;
+    width: 340px;
+}
+.left-image-text-btn{
+    padding: 10px 20px 10px 25px;
+    font-size: 20px !important;
+    word-spacing: 4px;
+}
+.title-sm{
+    position:relative !important;
+    top:20px !important;
+    font-size: 22px !important;
+    margin-top: 0px !important;
+    line-height: 5px !important;
+}
+.title-lg{
+    font-size: 26px !important;
+}
+.membership{
+    background: linear-gradient(7deg, #FF675C 10.58%, #FF5CF4 75.18%) !important;
+    height: 108vh !important;
+    flex-direction: column !important;
+}
+.membership-title{
+    font-size: 46px !important;
+    width: 250px;
+    line-height: 52px;
+    top:5% !important;
+}
+.membership-text{
+    top: 15% !important;
+    margin-left: 5% !important;
+}
+.membership-subtitle{
+    font-size: 24px !important;
+}
+.right-image-text-btn{
+    background: #0A091A;
+    border-radius: 45px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px !important;
+    line-height: 110%;
+    color: #FFFFFF;
+    padding: 15px 40px;
+}
+.membership-right{
+    background-size: 87% 62% !important;
+    background-repeat: no-repeat !important;
+}
+.culture-text{
+    top: 5% !important;
+}
+.culture-title{
+    font-size: 35px !important;
+    line-height: 130% !important;
+}
+.culture-subtitle{
+    font-size: 22px !important;
+    line-height: 110% !important;
+    width: 360px;
+}
+.culture-btn{
+    display: block;
+    margin: 15px 0px;
+}
+.create-with-us{
+    width: 250px;
+}
+.create-img{
+    margin-left: 20px;
+}
+.join-our-discord{
+    margin-left: 0px !important;
+    width: 250px;
+}
+.collection-left{
+    margin-top: 35px;
+}
+.stageverse-content{
+    margin-left: 5% !important;
+}
+.stageverse-text{
+    width: 258px !important;
+    font-size: 26px !important;
+    line-height: 25px;
+}
+.download-container-hide{
+    display: none !important;
+}
+.download-container{
+    display: block !important;
+    background: linear-gradient(180deg, #F4FF5C 0%, #5CFFB8 35.61%, #665BFF 64.25%, #FF5CF4 100%);
+    height: 330px;
+}
+.download-img-btn{
+    display: block;
+    position: relative;
+    left: 30px;
+    top: 40px;
+    margin: 17px 0px;
+}
+.donwnload-sub-text{
+    font-family: 'Druk Wide Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-feature-settings: 'ss04' on, 'ss02' on, 'ss01' on;
+    color: #0A091A;
+    margin-top: 60px;
+    width: 350px;
+    margin-left: 30px;
+}
+.footer-sm{
+    margin-top: 50px;
+    flex-direction: column !important;
+}
+.footer-social-media{
+    flex-direction: column;
+}
+.logo-container{
+    margin-top: 0px !important;
+    margin-left: 5% !important;
+}
+.footer-big-text{
+    font-size: 30px !important;
+    padding-bottom: 0px !important;
+}
+.footer-sub-heading{
+    font-size: 24px !important;
+}
+.footer-sub-contianer{
+    margin-top: 10% !important;
+    width: 82%;
+    margin-left: 30px;
+}
+.footer-p-text{
+    font-size: 24px !important;
+    margin-top: 40px;
+}
+.footer-small-text{
+    width: 85%;
+    font-size: 20px;
+}
+.social-media-footer-container{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.social-media-footer{
+    padding-right: 30px;
+}
+.h3{
+    font-size: 28px !important;
+    line-height: 40px !important;
+}
+}
+// ================================================================== End of mobile View ===========================================================
