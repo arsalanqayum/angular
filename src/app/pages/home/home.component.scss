@@ -170,28 +170,45 @@
     height:3vh;
 }
 .right-one{
-    background-image: url('/assets/images/ui-assets/CenterStage_62 1.png');    background-size: auto; background-repeat: no-repeat;    background-position: bottom;height: 25vh;
+    background-image: url('/assets/images/ui-assets/CenterStage_62 1.png');    
+    background-size: cover; 
+    background-repeat: no-repeat;    
+    background-position: bottom;
+    height: 25vh;
 }
 .right-two{
-    background-image: url('/assets/images/ui-assets/IMG_2554 2.png');    background-size: auto; background-repeat: no-repeat;    background-position: center;height: 50vh;
+    background-image: url('/assets/images/ui-assets/IMG_2554 2.png');    
+    background-size: cover; 
+    background-repeat: no-repeat;    
+    background-position: center;
+    height: 50vh;
 }
 .right-three{
-    background-image: linear-gradient(150.58deg, rgba(0, 0, 0, 0.6) 1.14%, rgba(0, 0, 0, 0.265625) 48.1%, rgba(0, 0, 0, 0) 60.46%),url('/assets/images/ui-assets/card2-1.png');    background-size: auto; background-repeat: no-repeat;    background-position: left;height: 50vh;
+    background-image: url('/assets/images/ui-assets/women.png');    
+    background-size: cover; 
+    background-repeat: no-repeat;    
+    background-position: top;
+    height: 50vh;
 }
 .right-four{
-    background-image: url('/assets/images/ui-assets/CenterStage_94_RTFKT_1 1.png');    background-size: auto; background-repeat: no-repeat;    background-position: left;
+    background-image: url('/assets/images/ui-assets/CenterStage_94_RTFKT_1 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 .simulation-2{
-    background-image: linear-gradient(
-        180deg
-        , rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.265625) 79.17%, rgba(0, 0, 0, 0) 100%),url('/assets/images/ui-assets/shantel.png');background-size: contain; background-repeat: no-repeat;    background-position: center;
-        height: 74vh;
+    background-image: url('/assets/images/ui-assets/shantel.png');
+    background-size: cover; 
+    background-repeat: no-repeat;    
+    background-position: center;
+    height: 74vh;
 }
 .simulation-3{
-    background-image: linear-gradient(
-        180deg
-        , rgba(126, 62, 62, 0.6) 0%, rgba(0, 0, 0, 0.265625) 79.17%, rgba(0, 0, 0, 0) 100%),url('/assets/images/ui-assets/rambow.png');background-size: contain; background-repeat: no-repeat;    background-position: center;
-        height: 74vh;
+    background-image: url('/assets/images/ui-assets/rambow.png');
+    background-size: cover; 
+    background-repeat: no-repeat;    
+    background-position: center;
+    height: 74vh;
 }
 .paragraph{
   margin-top: 0px;
@@ -319,7 +336,7 @@
     flex: 1;
 }
 .muse{
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.265625) 79.17%, rgba(0, 0, 0, 0) 100%),url('/assets/images/ui-assets/center-stage.png');
+    background-image: url('/assets/images/ui-assets/center-stage.png');
     background-position: center;
 
     background-size:100% 100%;
@@ -328,7 +345,7 @@
        height: 68vh;
 }
 .muse-2{
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.265625) 79.17%, rgba(0, 0, 0, 0) 100%),url('/assets/images/ui-assets/future-dome.png');
+    background-image: url('/assets/images/ui-assets/future-dome.png');
     background-position: center;
     background-size:100% 100%;
     object-fit: cover;
@@ -384,8 +401,8 @@ color: #FFFFFF;
     background-size:100% 100%;
     object-fit: cover;
     background-repeat: no-repeat;
-       height: 80vh;
-       background-position: center;
+    height: 80vh;
+    background-position: center;
 }
 .membership{
     background: linear-gradient(84.67deg, #FF675C -32.42%, #FF5CF4 151.18%);
@@ -398,7 +415,7 @@ color: #FFFFFF;
     background: linear-gradient(
 82.91deg
 , #0b091a00 -213.78%, rgba(0, 0, 0, 0) 195.01%), url(/assets/images/ui-assets/culture.png);
-    background-size: 101%;
+    background-size: cover;
     mix-blend-mode: color-dodge;
     transform: rotate(
 0.52deg
@@ -421,16 +438,32 @@ color: #FFFFFF;
 
 }
 .stageverse-1{
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.265625) 79.17%, rgba(0, 0, 0, 0) 100%),url('/assets/images/ui-assets/women.png');background-size: 100% 100%; background-repeat: no-repeat; height: 75vh;    background-position: bottom;
+    background-image: url('/assets/images/ui-assets/women.png');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat; 
+    height: 75vh;    
+    background-position: bottom;
 }
 .stageverse-2{
-    background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.265625) 79.17%, rgba(0, 0, 0, 0) 100%), url('/assets/images/ui-assets/racket.png');background-size: 100% 100%; background-repeat: no-repeat; height: 75vh;    background-position: center;
+    background-image: url('/assets/images/ui-assets/racket.png');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat; 
+    height: 75vh;    
+    background-position: center;
 }
 .stageverse-3{
-    background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.265625) 79.17%, rgba(0, 0, 0, 0) 100%), url('/assets/images/ui-assets/glass.png');background-size: 100% 100%; background-repeat: no-repeat; height: 75vh;    background-position: center;
+    background-image:url('/assets/images/ui-assets/glass.png');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat; 
+    height: 75vh;    
+    background-position: center;
 }
 .stageverse-4{
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.265625) 79.17%, rgba(0, 0, 0, 0) 100%),url('/assets/images/ui-assets/goods.png');background-size: 100% 100%; background-repeat: no-repeat; height: 75vh;    background-position: center;
+    background-image: url('/assets/images/ui-assets/goods.png');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat; 
+    height: 75vh;    
+    background-position: center;
 }
 .btn-position{
     position: relative;
