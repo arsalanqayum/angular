@@ -35,6 +35,9 @@
 .mobile{
     display: none;
 }
+.disktop-hide{
+    display: none !important;
+}
 .social-media-footer-container{
     display: flex;
     flex-direction: row;
@@ -338,7 +341,7 @@
 }
 .simulation-content-venues{
     position: relative;
-    top: 58vh;
+    top: 79vh;
    text-align: left;
    margin-left: 6%;
 }
@@ -373,7 +376,7 @@
     background-size:100% 100%;
     object-fit: cover;
     background-repeat: no-repeat;
-       height: 68vh;
+       height: 90vh;
 }
 .muse-2{
     background-image: url('/assets/images/ui-assets/future-dome.png');
@@ -381,7 +384,7 @@
     background-size:100% 100%;
     object-fit: cover;
     background-repeat: no-repeat;
-       height: 68vh;
+       height: 90vh;
 }
 .muse-content{
     position: relative;
@@ -699,6 +702,9 @@ color: #FFFFFF;
     .mobile{
         display: block !important;
     }
+    .disktop-hide{
+        display: block !important;
+    }
 .mob{
     height: 67px !important;
 }
@@ -728,9 +734,9 @@ color: #FFFFFF;
     width: 304px;
 }
 .left-image-text-btn{
-    padding: 10px 20px 10px 25px;
-    font-size: 20px ;
-    word-spacing: 4px;
+    padding: 12px 30px 15px 25px;
+    font-size: 20px;
+    word-spacing: 0px;
 }
 .title-sm{
     font-size: 14px;
@@ -743,7 +749,7 @@ color: #FFFFFF;
 }
 .membership{
     background: linear-gradient(7deg, #FF675C 10.58%, #ff5cf5 75.18%);
-    height: 750px ;
+    height: 100vh ;
     flex-direction: column;
 }
 .membership-title{
@@ -993,8 +999,17 @@ color: #FFFFFF;
 // =========================================End media 600==================================================
 // =========================================Start media 414 and less than 414px============================
 @media screen and (max-width: 414px) {
+    .membership{
+        margin-top: 20px;
+    }
     .culture{
      height: 98vh;
+     }
+     .cluture-image-women{
+         background-size: 42vh;
+         height: 34vh;
+         background-position: bottom;
+ 
      }
  }
  // ============================================End of 414===================================================
@@ -1009,7 +1024,6 @@ color: #FFFFFF;
     .cluture-image-women{
         background-size: 42vh;
         height: 36vh;
-        background-position: bottom;
 
     }
 }
@@ -1034,10 +1048,15 @@ color: #FFFFFF;
 // =========================================Start media 360 and less than 360px==============================
 @media screen and (max-width: 360px) {
     .culture{
-        height: 105vh;
+        height: 80vh;
     }
     .cluture-image-women{
-        background-size: 51vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        padding-top: 66.64%;
 
     }
     .culture-subtitle{

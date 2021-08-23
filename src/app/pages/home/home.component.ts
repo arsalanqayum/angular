@@ -65,10 +65,11 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
   customOptions: OwlOptions = {
    
     loop: false,
-    mouseDrag: false,
-    touchDrag: false,
+    mouseDrag: true,
+    touchDrag: true,
     pullDrag: false,
     dots: false,
+    nav: false,
     navSpeed: 700,
     navText: ['', ''],
     responsive: {
@@ -78,37 +79,44 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
       300: {
         items: 1,
         stagePadding: 17,
-        dots:false
+        dots: false,
+        nav: false,
       },
       350: {
         items: 1,
         stagePadding: 17,
-        dots:false
+        dots: false,
+        nav: false,
       },
       400: {
         items: 1,
         stagePadding: 25,
-        dots:false
+        dots: false,
+        nav: false,
       },
       450: {
         items: 1,
         stagePadding: 25,
-        dots:false
+        dots: false,
+        nav: false,
       },
       500: {
         items: 1,
         stagePadding: 25,
-        dots:false
+        dots: false,
+        nav: false,
       },
       550: {
         items: 1,
         stagePadding: 25,
-        dots:false
+        dots: false,
+        nav: false,
       },
       600: {
         items: 1,
         stagePadding: 25,
-        dots:false
+        dots: false,
+        nav: false,
       },
       740: {
         items: 3
@@ -117,7 +125,7 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
         items: 4
       }
     },
-    nav: true
+   
   }
   constructor(private _pubSubService: PubSubService,
     private _renderer: Renderer2,
