@@ -1,5 +1,37 @@
 @import "./styles";
-
+.nav-container{
+    background-color: #0A091A;
+}
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 0;
+    height: 128px;
+    overflow: hidden;
+    width: 95%;
+  }
+  
+.nav-item {
+    float: left;
+    line-height: 128px;
+    margin-top: 20px;
+}
+  
+.nav-link {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.logo-stageverse{
+    position: absolute;
+    height: 60px;
+    left: 3%;
+    top: 34px;
+}
+.logo-sv{
+    height: 16vh;
+}
 .mobile{
     display: none;
 }
@@ -70,15 +102,15 @@
     margin-left:auto;
     margin-right: auto;
     padding: 30px 0px;
-    margin-top: 13.5vh;
+    margin-top: 10vh;
 }
 .left-image{
 
     background-image:
     linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%),
     url('/assets/images/ui-assets/CenterStage.png');
-    background-position: center;
-    background-size:100% 100%;
+    background-position: bottom;
+    background-size:cover;
     object-fit: cover;
     background-repeat: no-repeat;
     height: 130vh;
@@ -268,8 +300,7 @@
     color: #FFFFFF;
 }
  .h3{
-    font-style: normal;
-    font-weight: bold;
+     font-weight: bold;
     font-size: 1.8vw;
     line-height: 5vh;
     letter-spacing: -0.01em;
@@ -293,19 +324,19 @@
 //     text-decoration-line: underline;
 //     color: #FFFFFF;
 // }
-.sumilation-content-2{
+.simulation-content-2{
   position: relative;
   top: 57vh;
   text-align: left;
   margin-left: 6%;
 }
-.sumilation-content-3{
+.simulation-content-3{
     position: relative;
     top: 60%;
    text-align: left;
    margin-left: 5%;
 }
-.sumilation-content-venues{
+.simulation-content-venues{
     position: relative;
     top: 58vh;
    text-align: left;
@@ -405,7 +436,7 @@ color: #FFFFFF;
     background-position: center;
 }
 .membership{
-    background: linear-gradient(84.67deg, #FF675C -32.42%, #FF5CF4 151.18%);
+    background: linear-gradient(84.67deg, #FF675C -32.42%, #ff5cf5 151.18%);
     height: 70vh;
 }
 .membership-left{
@@ -413,8 +444,7 @@ color: #FFFFFF;
 }
 .membership-right{
     background: linear-gradient(
-82.91deg
-, #0b091a00 -213.78%, rgba(0, 0, 0, 0) 195.01%), url(/assets/images/ui-assets/culture.png);
+82.91deg, #0b091a00 -213.78%, rgba(0, 0, 0, 0) 195.01%), url(/assets/images/ui-assets/culture.png);
     background-size: cover;
     mix-blend-mode: color-dodge;
     transform: rotate(
@@ -676,84 +706,119 @@ color: #FFFFFF;
     display: none !important;
 }
 .left-image{
-    margin: 39px 0px;
+    margin: 0px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    height: 545px;
+    background-size: 100% 100%;
+    background-position: bottom right;
 }
 .left-image-text{
-    margin-top: 10% !important;
+    margin-top: 5vh;
     width: 40%;
-    margin-left: 5% !important;
+    margin-left: 5%;
 
 }
 .left-image-text-title{
-    font-size: 50px !important;
+    font-size: 35px;
+    line-height: 130%;
 }
 .left-image-text-subtitle{
-    font-size: 25px !important;
-    margin: 50px 0px;
-    width: 340px;
+    font-size: 18px;
+    margin: 0px 0px;
+    width: 304px;
 }
 .left-image-text-btn{
     padding: 10px 20px 10px 25px;
-    font-size: 20px !important;
+    font-size: 20px ;
     word-spacing: 4px;
 }
 .title-sm{
-    position:relative !important;
-    top:20px !important;
-    font-size: 22px !important;
-    margin-top: 0px !important;
-    line-height: 5px !important;
+    font-size: 14px;
+    margin-top: 0px;
+    line-height: 18px;
 }
 .title-lg{
-    font-size: 26px !important;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 .membership{
-    background: linear-gradient(7deg, #FF675C 10.58%, #FF5CF4 75.18%) !important;
-    height: 108vh !important;
-    flex-direction: column !important;
+    background: linear-gradient(7deg, #FF675C 10.58%, #ff5cf5 75.18%);
+    height: 750px ;
+    flex-direction: column;
 }
 .membership-title{
-    font-size: 46px !important;
-    width: 250px;
-    line-height: 52px;
-    top:5% !important;
+    font-size: 35px ;
+    width: 250px; 
+    line-height: 130%;
 }
 .membership-text{
-    top: 15% !important;
-    margin-left: 5% !important;
+    top: 6%;
+    margin-left: 8%;
 }
 .membership-subtitle{
-    font-size: 24px !important;
+    font-size: 20px;
+    line-height: 110%;
 }
 .right-image-text-btn{
     background: #0A091A;
     border-radius: 45px;
     font-style: normal;
     font-weight: bold;
-    font-size: 22px !important;
+    font-size: 22px;
     line-height: 110%;
     color: #FFFFFF;
     padding: 15px 40px;
 }
 .membership-right{
-    background-size: 87% 62% !important;
-    background-repeat: no-repeat !important;
+    margin-top: 54px;
+    background-size: 82% 88% ;
+    min-height: 40vh;
+    transform: rotate(359.52deg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.stageverse-1{
+    height: 66vh;
+}
+.stageverse-2{
+    height: 66vh;
+}
+.stageverse-3{
+    height: 66vh;
+}
+.stageverse-4{
+    height: 66vh;
+}
+.culture{
+    height:750px;
+}
+.cornor-image{
+    background-image: none;
+    
+}
+.culture-sm{
+    flex-direction: column !important;
 }
 .culture-text{
-    top: 5% !important;
+    top: 20px;
+    margin-left: 10%;
 }
 .culture-title{
-    font-size: 35px !important;
-    line-height: 130% !important;
+    font-size: 35px;
+    line-height: 130%;
 }
 .culture-subtitle{
-    font-size: 22px !important;
-    line-height: 110% !important;
-    width: 360px;
+    font-size: 20px;
+    line-height: 110%;
+    width: 333px;
 }
 .culture-btn{
     display: block;
     margin: 15px 0px;
+}
+.cluture-image-women{
+    background-size: 47vh;
+    height: 36vh;
 }
 .create-with-us{
     width: 250px;
@@ -767,14 +832,23 @@ color: #FFFFFF;
 }
 .collection-left{
     margin-top: 35px;
+    height: 60vh;
+    background-size: cover;
 }
 .stageverse-content{
-    margin-left: 5% !important;
+    margin-left: 5%;
+    top: 46vh;
 }
 .stageverse-text{
-    width: 258px !important;
-    font-size: 26px !important;
-    line-height: 25px;
+    width: 207px ;
+    font-size: 20px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+}
+.stage-heading{
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
 }
 .download-container-hide{
     display: none !important;
@@ -807,29 +881,29 @@ color: #FFFFFF;
 }
 .footer-sm{
     margin-top: 50px;
-    flex-direction: column !important;
+    flex-direction: column;
 }
 .footer-social-media{
     flex-direction: column;
 }
 .logo-container{
-    margin-top: 0px !important;
-    margin-left: 5% !important;
+    margin-top: 0px;
+    margin-left: 5%;
 }
 .footer-big-text{
-    font-size: 30px !important;
-    padding-bottom: 0px !important;
+    font-size: 30px;
+    padding-bottom: 0px;
 }
 .footer-sub-heading{
-    font-size: 24px !important;
+    font-size: 20px;
 }
 .footer-sub-contianer{
-    margin-top: 10% !important;
+    margin-top: 10%;
     width: 82%;
     margin-left: 30px;
 }
 .footer-p-text{
-    font-size: 24px !important;
+    font-size: 20px;
     margin-top: 40px;
 }
 .footer-small-text{
@@ -844,8 +918,145 @@ color: #FFFFFF;
     padding-right: 30px;
 }
 .h3{
-    font-size: 28px !important;
-    line-height: 40px !important;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-feature-settings: 'ss02' on;
+}
+.nav{
+    height: 67px;
+}
+.logo-stageverse{
+    height: 27px;
+    left: 20px;
+    top: 20px;
+
+}
+.what-happen{
+    height: 60vh;
+}
+.paragraph{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.simulation-content{
+    top: 40vh;
+}
+.simulation-content-2{
+    top: 40vh;
+}
+.simulation-2{
+    height: 60vh;
+}
+.simulation-3{
+    height: 60vh;
+}
+.muse{
+    height: 60vh;
+    background-size: cover;
+    background-position: bottom;
+}
+.muse-2{
+    background-size: cover;
+    background-position: bottom;
+    height: 60vh;
+}
+.simulation-content-venues{
+    top: 52vh;
+}
+.muse-content{
+    top: 45vh;
+}
+.collection-right{
+    margin-top: 35px;
+    height: 60vh;
+    background-size: cover;
+}
+
+
+.title-container{
+    margin-top: 4.5vh;
+    width: 86%;
+    padding: 15px 0px;
+}
+.btn-position{
+    top: 5vh;
+}
+.mobile-hide{
+    display: none !important;
 }
 }
-// ================================================================== End of mobile View ===========================================================
+// =========================================End media 600==================================================
+// =========================================Start media 414 and less than 414px============================
+@media screen and (max-width: 414px) {
+    .culture{
+     height: 98vh;
+     }
+ }
+ // ============================================End of 414===================================================
+// =========================================Start media 411 and less than 411px============================
+@media screen and (max-width: 411px) {
+   .membership{
+       height: 98vh;
+   }
+   .culture{
+    height: 92vh;
+    }
+    .cluture-image-women{
+        background-size: 42vh;
+        height: 36vh;
+        background-position: bottom;
+
+    }
+}
+// ============================================End of 411===================================================
+
+// =========================================Start media 375 and less than 375px=============================
+@media screen and (max-width: 375px) {
+   .membership{
+       height: 110vh;
+   }
+   .culture{
+    height: 104vh;
+    }
+    .cluture-image-women{
+        background-size: 46vh;
+        height: 36.5vh;
+
+    }
+}
+// ============================================End of 375====================================================
+
+// =========================================Start media 360 and less than 360px==============================
+@media screen and (max-width: 360px) {
+    .culture{
+        height: 105vh;
+    }
+    .cluture-image-women{
+        background-size: 51vh;
+
+    }
+    .culture-subtitle{
+        font-size: 18px;
+        width: 295px;
+    }
+}
+// ============================================End of 360====================================================
+
+// =========================================Start media 320 and less than 320px==============================
+@media screen and (max-width: 320px) {
+    .membership{
+        height: 125vh;
+    }
+
+
+
+    .culture{
+        height: 115vh;
+    }
+}
+// ============================================End of 320=====================================================

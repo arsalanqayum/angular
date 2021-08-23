@@ -75,7 +75,37 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
       0: {
         items: 1
       },
+      300: {
+        items: 1,
+        stagePadding: 17,
+        dots:false
+      },
+      350: {
+        items: 1,
+        stagePadding: 17,
+        dots:false
+      },
       400: {
+        items: 1,
+        stagePadding: 25,
+        dots:false
+      },
+      450: {
+        items: 1,
+        stagePadding: 25,
+        dots:false
+      },
+      500: {
+        items: 1,
+        stagePadding: 25,
+        dots:false
+      },
+      550: {
+        items: 1,
+        stagePadding: 25,
+        dots:false
+      },
+      600: {
         items: 1,
         stagePadding: 25,
         dots:false

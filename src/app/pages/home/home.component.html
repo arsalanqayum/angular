@@ -1,8 +1,42 @@
-<div #Page class="Page Home Module  vp-min-height" theme="DARK">
-    <div class="head">
+
+<div>
+<!-- <div #Page class="Page Home Module  vp-min-height" theme="DARK"> -->
+   
+    <!-- <div class="head">
         <app-nav></app-nav>
+    </div> -->
+    <div class="nav-container">
+        <ul class="nav">
+            <li class="nav-item"> 
+                <!-- <a routerLink="/" class="nav-link"> -->
+                    <!-- <img src="assets/images/Stageverse_Wordmark_White.png"> -->
+                    <!-- <img src="assets/images/ui-assets/logo-s.png" class="logo-sv" > -->
+                    <!-- <img src="assets/images/ui-assets/V-logo.png" style="height: 19px;position: relative;top: 10px;right: 18px;"> -->
+                <!-- </a>  -->
+
+                <!-- <a routerLink="/" class="nav-link" >
+                     <img src="assets/images/Stageverse_Wordmark_White.png"> 
+                </a> -->
+                <a routerLink="/"  class="nav-link">
+                    
+                    <img src="assets/images/ui-assets/Lockup.png" class="logo-stageverse" alt="Logo" />
+                </a> 
+            </li>
+            <li class="nav-item mobile-hide"  style="display: flex;gap: 1px; float:right">
+                <a [routerLink]="" (click)="showEarlyAccess()" action="early-access"  class="nav-link" >
+                    <img src="/assets/images/ui-assets/apple-button.png" style="height: 60px;">
+                </a>
+                <a [routerLink]="" (click)="showEarlyAccess()" action="early-access"  class="nav-link">
+                    <img src="/assets/images/ui-assets/android-button.png" style="height: 60px;">
+                </a>
+                <a [routerLink]="" (click)="showEarlyAccess()" action="early-access" class="nav-link" >
+                    <img src="/assets/images/ui-assets/ring.png" style="height: 60px;">
+                </a>
+            </li>
+           <!-- <li class="nav-item"><a href="#" class="nav-link">Home</a></li> -->
+        </ul>
     </div>
-    <div class="body mt-2">
+    <div class="body">
         <div>
             <div class="example-collection-grid" >
                 <div class="example-collection-cell">
@@ -75,7 +109,7 @@
                     <div class="example-collection-grid nested">
                         <div class="example-collection-cell ">
                             <div class="example-collection-item simulation-2" >
-                                <div class="sumilation-content-2">
+                                <div class="simulation-content-2">
                                     <p class="paragraph">COMING SOON · may 31</p>
                                     <h3 class="h3">Shantell Martin</h3>
                                     <p class="paragraph">ART GALLERY · CENTER STAGE</p>
@@ -84,7 +118,7 @@
                         </div>
                         <div class="example-collection-cell ">
                             <div class="example-collection-item simulation-3" >
-                                <div class="sumilation-content-2">
+                                <div class="simulation-content-2">
                                     <p class="paragraph">COMING SOON · may 31</p>
                                     <h3 class="h3">Neon Dreams</h3>
                                     <p class="paragraph">NFT DROP · CENTER STAGE</p>
@@ -112,10 +146,10 @@
             <ng-template class="example-collection-grid nested" carouselSlide>
                 <div class="example-collection-cell">
                     <div class="example-collection-item simulation-2" >
-                        <div class="sumilation-content-2">
-                            <p class="p">COMING SOON · may 31</p>
+                        <div class="simulation-content-2">
+                            <p class="paragraph">COMING SOON · may 31</p>
                             <h3 class="h3">Shantell Martin</h3>
-                            <p class="p">ART GALLERY · CENTER STAGE</p>
+                            <p class="paragraph">ART GALLERY · CENTER STAGE</p>
                         </div>
                     </div>
             </div>
@@ -123,10 +157,10 @@
             <ng-template class="example-collection-grid nested" carouselSlide>
                 <div class="example-collection-cell">
                     <div class="example-collection-item simulation-3" >
-                        <div class="sumilation-content-2">
-                            <p class="p">COMING SOON · may 31</p>
+                        <div class="simulation-content-2">
+                            <p class="paragraph">COMING SOON · may 31</p>
                             <h3 class="h3">Neon Dreams</h3>
-                            <p class="p">NFT DROP · CENTER STAGE</p>
+                            <p class="paragraph">NFT DROP · CENTER STAGE</p>
                         </div>
                     </div>
             </div>
@@ -145,7 +179,7 @@
             <div class="example-collection-grid">
                 <div class="example-collection-cell">
                     <div class="slide example-collection-item muse" >
-                        <div class="sumilation-content-venues">
+                        <div class="simulation-content-venues">
                             <p class="h3">Center Stage</p>
                             <h3 class="h3">CONCERT · MUSE STADIUM</h3>
                             <a class="learnmore" href="javascript:void(0);">Learn more</a>
@@ -154,7 +188,7 @@
                 </div>
                 <div class="example-collection-cell">
                     <div class="example-collection-item muse-2" >
-                        <div class="slide sumilation-content-venues">
+                        <div class="slide simulation-content-venues">
                             <p class="h3">Future Dome</p>
                             <h3 class="h3">CONCERT · MUSE STADIUM</h3>
                             <a class="learnmore" href="javascript:void(0);">Learn more</a>
@@ -167,7 +201,7 @@
             <ng-template class="example-collection-grid" carouselSlide>
                 <div class="example-collection-cell">
                     <div class="slide example-collection-item muse" >
-                        <div class="sumilation-content-venues">
+                        <div class="simulation-content-venues">
                             <p class="h3">Center Stage</p>
                             <!-- <h3 class="h3">CONCERT · MUSE STADIUM</h3>
                             <a class="learnmore" href="javascript:void(0);">Learn more</a> -->
@@ -179,7 +213,7 @@
                 <div class="example-collection-cell">
 
                     <div class="slide example-collection-item muse-2" >
-                        <div class="sumilation-content-venues">
+                        <div class="simulation-content-venues">
                             <p class="h3">Stageverse Stadium</p>
                             <!-- <h3 class="h3">CONCERT · MUSE STADIUM</h3>
                             <a class="learnmore" href="javascript:void(0);">Learn more</a> -->
@@ -366,7 +400,7 @@
             </div>
         </div>
         <div class="culture">
-            <div class="example-collection-grid" >
+            <div class="example-collection-grid culture-sm" >
                 <div class="example-collection-cell cornor-image">
                     <div class="example-collection-item" >
                         <div class="culture-text">
@@ -386,7 +420,10 @@
                 
             </div>
             <div class="example-collection-cell">
-                <div class="example-collection-item cluture-image-women" >
+                <div class="example-collection-item" >
+                    <div class="cluture-image-women">
+
+                    </div>
                 
 
               
@@ -508,10 +545,11 @@
                 </div>
             </div>
         </div>
-
-        <div class="content footer invisible">
+        <!-- BY DAVID -->
+        <!-- this footer is commented due to it is rendering to the media queries classes  -->
+        <!-- <div class="content footer invisible">
             <app-footer [isReducedView]="false"></app-footer>
-        </div>
+        </div> -->
     </div>
     <!-- <div class="foot hide-desktop">
         <div class="mobile-actions">
