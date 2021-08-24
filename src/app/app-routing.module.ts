@@ -14,6 +14,8 @@ import { HomeRoutingModule } from './pages/home/home-routing.module';
 import { HomeComponent } from './pages/home/home.component';
 
 import { NotFoundComponent } from './pages/notfound/notfound.component';
+import { MuseRouterModule } from './pages/muse/router/muse-router/muse-router.module';
+import { CreatorsRouterModule } from './pages/creators/router/creators-router/creators-router.module';
 
 const routes: Routes = [
   /* define app module routes here, e.g., to lazily load a module
@@ -37,7 +39,9 @@ const routes: Routes = [
     // StageRoutingModule,
     TermsRoutingModule,
     EarlyAccessRoutingModule,
+    CreatorsRouterModule,
     PressRoutingModule,
+    MuseRouterModule,
     RouterModule.forRoot(routes, {
       scrollPositionRestoration: 'enabled'
     })

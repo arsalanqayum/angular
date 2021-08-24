@@ -33,10 +33,17 @@ import { NotFoundModule } from './pages/notfound/notfound.module';
 import { Angulartics2Module } from 'angulartics2';
 import { AnalyticsService } from './services/analytics/analytics.service';
 
+import { CreatorsModule } from './pages/creators/creators/creators.module';
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+   
+    
+
   ],
   imports: [
     BrowserModule,
@@ -52,6 +59,8 @@ import { AnalyticsService } from './services/analytics/analytics.service';
     CompanyModule,
     TermsModule,
     PrivacyModule,
+    CreatorsModule,
+  
     EarlyAccessModule,
     PressModule,
     NotFoundModule,

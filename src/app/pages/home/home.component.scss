@@ -27,7 +27,7 @@
 .culture-right{
     flex: 2;
     background-image: url(/assets/images/ui-assets/culture-women.png);
-    height: 450px;
+    height: 68vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -205,6 +205,10 @@
     color: #0A091A;
     padding: 10px 31px;
 }
+.left-image-text-btn:hover{
+    background: linear-gradient(0deg, rgba(123, 97, 255, 0.2), rgba(123, 97, 255, 0.2)), #FFFFFF;
+    color: #0A091A;
+}
 .right-header-content{
     position: relative;
     top: 80%;
@@ -227,6 +231,10 @@
     line-height: 110%;
     color: #FFFFFF;
     padding: 10px 31px;
+}
+.right-image-text-btn:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)), #0A091A;
+    color: #ffffff;
 }
 .right-image-text-btn img{
     position: relative;
@@ -859,6 +867,9 @@ color: #FFFFFF;
 .create-with-us{
     width: 250px;
 }
+.create-with-us:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)), #0A091A;
+}
 .create-img{
     margin-left: 20px;
 }
@@ -1022,7 +1033,7 @@ color: #FFFFFF;
 .btn-position{
     top: 5vh;
 }
-.mobile-hide{
+.sm-hide{
     display: none !important;
 }
 .culture-1{

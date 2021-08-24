@@ -1,28 +1,14 @@
 
 <div>
-<!-- <div #Page class="Page Home Module  vp-min-height" theme="DARK"> -->
-   
-    <!-- <div class="head">
-        <app-nav></app-nav>
-    </div> -->
     <div class="nav-container">
         <ul class="nav">
             <li class="nav-item"> 
-                <!-- <a routerLink="/" class="nav-link"> -->
-                    <!-- <img src="assets/images/Stageverse_Wordmark_White.png"> -->
-                    <!-- <img src="assets/images/ui-assets/logo-s.png" class="logo-sv" > -->
-                    <!-- <img src="assets/images/ui-assets/V-logo.png" style="height: 19px;position: relative;top: 10px;right: 18px;"> -->
-                <!-- </a>  -->
-
-                <!-- <a routerLink="/" class="nav-link" >
-                     <img src="assets/images/Stageverse_Wordmark_White.png"> 
-                </a> -->
                 <a routerLink="/"  class="nav-link">
                     
                     <img src="assets/images/ui-assets/Lockup.png" class="logo-stageverse" alt="Logo" />
                 </a> 
             </li>
-            <li class="nav-item mobile-hide"  style="display: flex;gap: 1px; float:right">
+            <li class="nav-item sm-hide"  style="display: flex;gap: 1px; float:right">
                 <a [routerLink]="" (click)="showEarlyAccess()" action="early-access"  class="nav-link" >
                     <img src="/assets/images/ui-assets/apple-button.png" style="height: 60px;">
                 </a>
@@ -36,7 +22,6 @@
            <li class="nav-item disktop-hide" style="float: right !important; margin-top: -15px;"><a href="#" class="nav-link">
                <img src="/assets/images/ui-assets/menu-icon.png" style="height: 50px;" />
            </a></li>
-           <!-- <li class="nav-item"><a href="#" class="nav-link">Home</a></li> -->
         </ul>
     </div>
     <div class="body">
@@ -104,7 +89,6 @@
                             <p class="paragraph">Started AUG 12</p>
                             <h3 class="h3">Muse: Enter The Simulation</h3>
                             <p class="paragraph">CONCERT · STAGEVERSE STADIUM</p>
-                            <!-- <a class="learnmore" href="javascript:void(0);">Learn more</a> -->
                         </div>
                     </div>
                 </div>
@@ -141,7 +125,6 @@
                             <p class="paragraph">Started AUG 12</p>
                             <h3 class="h3">Muse: Enter The Simulation</h3>
                             <p class="paragraph">CONCERT · STAGEVERSE STADIUM</p>
-                            <!-- <a class="learnmore" href="javascript:void(0);">Learn more</a> -->
                         </div>
                     </div>
             </div>
@@ -178,36 +161,12 @@
                 <h1 class="title-lg">Explore Beautiful social spaces</h1>
             </div>
         </div>
-        <!-- <div>
-            <div class="example-collection-grid">
-                <div class="example-collection-cell">
-                    <div class="slide example-collection-item muse" >
-                        <div class="simulation-content-venues">
-                            <p class="h3">Center Stage</p>
-                            <h3 class="h3">CONCERT · MUSE STADIUM</h3>
-                            <a class="learnmore" href="javascript:void(0);">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="example-collection-cell">
-                    <div class="example-collection-item muse-2" >
-                        <div class="slide simulation-content-venues">
-                            <p class="h3">Future Dome</p>
-                            <h3 class="h3">CONCERT · MUSE STADIUM</h3>
-                            <a class="learnmore" href="javascript:void(0);">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <owl-carousel-o [options]="customOptions">
             <ng-template class="example-collection-grid" carouselSlide>
                 <div class="example-collection-cell">
                     <div class="slide example-collection-item muse" >
                         <div class="simulation-content-venues">
                             <p class="h3">Center Stage</p>
-                            <!-- <h3 class="h3">CONCERT · MUSE STADIUM</h3>
-                            <a class="learnmore" href="javascript:void(0);">Learn more</a> -->
                         </div>
                     </div>
             </div>
@@ -218,8 +177,6 @@
                     <div class="slide example-collection-item muse-2" >
                         <div class="simulation-content-venues">
                             <p class="h3">Stageverse Stadium</p>
-                            <!-- <h3 class="h3">CONCERT · MUSE STADIUM</h3>
-                            <a class="learnmore" href="javascript:void(0);">Learn more</a> -->
                         </div>
 
                     </div>
@@ -244,7 +201,6 @@
                         <div class="muse-content">
                             <h3 class="h3">Muse NPC Collection</h3>
                             <p class="paragraph">Outfits · Limites</p>
-                            <!-- <a class="learnmore" href="javascript:void(0);">Learn more</a> -->
                         </div>
                     </div>
             </div>
@@ -256,7 +212,6 @@
                         <div class="muse-content">
                             <h3 class="h3">Balmain Simulation Collection</h3>
                             <p class="paragraph">Outfits · Limites</p>
-                            <!-- <a class="learnmore" href="javascript:void(0);">Learn more</a> -->
                         </div>
                     </div>
             </div>
@@ -351,50 +306,6 @@
             </ng-template>
 
         </owl-carousel-o>
-        <!-- <div>
-            <div class="example-collection-grid">
-                <div class="example-collection-cell">
-                    <div class="example-collection-item stageverse-1" >
-
-                     <div class="stageverse-content ">
-                        <h3 class="h3">Customizable Avatars</h3>
-                        <p class="stageverse-text">Flex your style with full-body, expressive avatars.</p>
-
-                    </div>
-                    </div>
-                </div>
-                <div class="example-collection-cell">
-                    <div class="example-collection-item stageverse-2" >
-
-                     <div class="stageverse-content ">
-                        <h3 class="h3">Friends & Parties</h3>
-                        <p class="stageverse-text">Meet up and explore together. Can we add one more line here?</p>
-
-                    </div>
-                    </div>
-                </div>
-                <div class="example-collection-cell">
-                    <div class="example-collection-item stageverse-3" >
-
-                        <div class="stageverse-content ">
-                            <h3 class="h3">Spatial Voice Chat</h3>
-                            <p class="stageverse-text">Talk and connect with others in beautifully-designed 3D spaces</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="example-collection-cell">
-                    <div class="example-collection-item stageverse-4" >
-
-                        <div class="stageverse-content ">
-                            <h3 class="h3">Virtual Goods</h3>
-                            <p class="stageverse-text">Play and express yourself with interactive toys and collectible items</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>   -->
 
         <div>
             <div class="container title-container">
@@ -402,29 +313,6 @@
                 <h1 class="title-lg">JOIN THE JOURNEY</h1>
             </div>
         </div>
-        <!-- <div class="culture">
-            <div class="example-collection-grid culture-sm" >
-                <div class="example-collection-cell cornor-image">
-                    <div class="example-collection-item" >
-                        <div class="culture-text">
-                            <h1 class="culture-title" style="color: white;">MOVE CULTURE FORWARD TOGETHER</h1>
-
-                            <p class="culture-subtitle">Apply to be part of the most exclusive members club of the metaverse and gain access to events.</p>
-                            <br>
-                            <a class="left-image-text-btn culture-btn create-with-us" href="javascript:void(0);">Create with us<img  class="create-img" src="/assets/images/ui-assets/black-arrow.png"/></a>
-                            <a class="left-image-text-btn culture-btn join-our-discord"href="javascript:void(0);">Join our Discord<img src="/assets/images/ui-assets/black-arrow.png"/></a>
-                        </div>
-                </div>
-                
-             </div>
-                <div class="example-collection-cell">
-                    <div class="example-collection-item" >
-                        <div class="cluture-image-women">
-                        </div>
-                    </div>
-                </div>
-             </div>
-        </div> -->
         <div class="culture-1">
             <div class="culture-left">
                 <div class="culture-title-container">
@@ -440,8 +328,7 @@
 
             </div>
             <div class="culture-right">
-                <!-- <div style="background-image: url('/assets/images/ui-assets/culture-women.png');"></div> -->
-                <img class="mobile" src="/assets/images/ui-assets/culture-women.png" />
+                <img class="mobile" src="/assets/images/ui-assets/culture-women.png" style="width: 75%;" />
             </div>
         </div>
         <div>
@@ -540,12 +427,13 @@
                     </div>
                         <div class="footer-social-media">
                             <div class="footer-small-text">
-                                <p style="font-size: 12px;">By signing up you are agreeing to the Stageverse <a style="text-decoration: underline;color: #fff;">Terms of Service</a> and Stageverse <a style="text-decoration: underline;color: #fff;">Privacy Policy</a>. You may unsubscribe at any time.</p>
+                                <p style="font-size: 12px;">By signing up you are agreeing to the Stageverse <a routerLink="/terms-of-service" style="text-decoration: underline;color: #fff;">Terms of Service</a> and Stageverse <a routerLink="/privacy" style="text-decoration: underline;color: #fff;">Privacy Policy</a>. You may unsubscribe at any time.</p>
 
                             </div>
                             <div class="social-media-footer-container">
                                 <a href="#" class="social-media-footer"><img src="assets/images/ui-assets/instagram.png" alt="instagram icon"></a>
                                 <a href="#" class="social-media-footer"><img src="assets/images/ui-assets/panda.png" alt="social icon"></a>
+                                <a href="#" class="social-media-footer"><img src="assets/images/ui-assets/linkedIn.png" alt="linkedIn icon"></a>
                                 <a href="#" class="social-media-footer"><img src="assets/images/ui-assets/twitter.png" alt="twitter icon"></a>
 
                             </div>
@@ -555,21 +443,9 @@
                 </div>
             </div>
         </div>
-        <!-- BY DAVID -->
-        <!-- this footer is commented due to it is rendering to the media queries classes  -->
-        <!-- <div class="content footer invisible">
-            <app-footer [isReducedView]="false"></app-footer>
-        </div> -->
     </div>
-    <!-- <div class="foot hide-desktop">
-        <div class="mobile-actions">
-            <div name="register-button-mobile" theme="DARK" style="display: block;">
-                <a href="#" action="follow" class="button space-between" theme="PINK">
-                    <p>Get early access</p>
-                    <p style="display: none;">Unfollow event</p> <span class="icon icon-arrow-right-thin"
-                        aria-hidden="true"></span>
-                </a>
-            </div>
-        </div>
-    </div> -->
+
+    <div class="content footer">
+        <app-footer></app-footer>
+    </div>
 </div>
