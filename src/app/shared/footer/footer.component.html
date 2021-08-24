@@ -3,15 +3,14 @@
    
     <ul class="nav-links">
       <li *ngIf="!isReducedView">
-        <a [routerLink]="['/company']" data-g-event="link" data-g-label="Company">Company</a>
+        <a [routerLink]="['/company']" >Company</a>
       </li>
       <!-- <li *ngIf="!isReducedView">
         <a href="https://medium.com/stageverse" target="_blank" data-g-event="link"
           data-g-label="Blog">Blog</a>
       </li> -->
       <li *ngIf="!isReducedView">
-        <a  href="/creators" target="_blank" data-g-event="link"
-          data-g-label="Creators">Creators</a>
+        <a [routerLink]="['/creators']" >Creators</a>
       </li>
       <!-- <li>
         <a href="mailto:hello@stageverse.com" target="_blank" data-g-event="link"
