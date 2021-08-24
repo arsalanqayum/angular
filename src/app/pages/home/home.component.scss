@@ -2,6 +2,36 @@
 .nav-container{
     background-color: #0A091A;
 }
+.culture-1{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(0deg, #665AFF, #665AFF);
+}
+.culture-left{
+    flex: 3;
+}
+.culture-title-container{
+    margin-left: 56px;
+    margin-top: 90px;
+}
+.culture-text-container{
+    width: 95%;
+    margin-top: 20px;
+    margin-left: 56px;
+}
+.culture-buttons{
+    width: 80%;
+    margin-left: 56px;
+    margin-top: 45px;
+}
+.culture-right{
+    flex: 2;
+    background-image: url(/assets/images/ui-assets/culture-women.png);
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .nav {
     list-style-type: none;
     margin: 0;
@@ -994,6 +1024,24 @@ color: #FFFFFF;
 }
 .mobile-hide{
     display: none !important;
+}
+.culture-1{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.culture-title-container{
+    margin-left: 35px;
+    margin-top: 20px;
+    width: 60%;
+}
+.culture-text-container{
+    margin-left: 35px;
+}
+.culture-buttons{
+    margin-left: 35px;
+}
+.culture-right{
+    background-image: none;
 }
 }
 // =========================================End media 600==================================================
