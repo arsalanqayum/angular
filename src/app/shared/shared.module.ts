@@ -68,7 +68,7 @@ import { OverlayViewYoutubeVideoComponent } from './overlay/overlay-view-youtube
 import { PageComponent } from './page/page.component';
 import { OverlayViewApiVideoComponent } from './overlay/overlay-view-api-video/overlay-view-api-video.component';
 import { OverlayViewVimeoVideoComponent } from './overlay/overlay-view-vimeo-video/overlay-view-vimeo-video.component';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
 // import { CreditCardDirectivesModule } from 'angular-cc-library';
 
 /**
@@ -81,7 +81,8 @@ import { OverlayViewVimeoVideoComponent } from './overlay/overlay-view-vimeo-vid
     HttpClientModule,
     RouterModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CarouselModule
   ],
   declarations: [
     // ToolbarComponent,
@@ -153,6 +154,7 @@ import { OverlayViewVimeoVideoComponent } from './overlay/overlay-view-vimeo-vid
     FooterComponent,
     FooterLgComponent,
     CommonModule,
+    CarouselModule,
     FormsModule,
     RouterModule,
     ReactiveFormsModule,

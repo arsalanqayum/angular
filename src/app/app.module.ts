@@ -34,6 +34,7 @@ import { Angulartics2Module } from 'angulartics2';
 import { AnalyticsService } from './services/analytics/analytics.service';
 
 import { CreatorsModule } from './pages/creators/creators/creators.module';
+import { MuseModule } from './pages/muse/muse/muse.module';
 
 
 
@@ -64,6 +65,7 @@ import { CreatorsModule } from './pages/creators/creators/creators.module';
     EarlyAccessModule,
     PressModule,
     NotFoundModule,
+    MuseModule,
     Angulartics2Module.forRoot()
   ],
   providers: [PubSubService, CartService, AnalyticsService, ScrollService],

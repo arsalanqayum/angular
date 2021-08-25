@@ -71,6 +71,8 @@
 .social-media-footer-container{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 15vw;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #fff;
@@ -88,7 +90,7 @@
     display: none;
 }
 .footer-small-text{
-    width: 71%;
+    width: 23vw;
 }
 .logo-container{
     margin-left: 5%;
@@ -958,6 +960,7 @@ color: #FFFFFF;
     font-size: 20px;
 }
 .social-media-footer-container{
+    width: 100%;
     margin-top: 40px;
     margin-bottom: 30px;
 }
@@ -1028,7 +1031,7 @@ color: #FFFFFF;
 .title-container{
     margin-top: 4.5vh;
     width: 86%;
-    padding: 15px 0px;
+    padding: 10px 0px;
 }
 .btn-position{
     top: 5vh;

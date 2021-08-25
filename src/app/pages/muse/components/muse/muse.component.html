@@ -37,7 +37,7 @@
                 <div class="flex-2">
                     <p class="paragraph paragraph-width">Stageverse has joined forces with Muse to bring you  a groundbreaking social concert experience, available for the first time in VR and on your mobile device. Jump into your avatar self and meet up with friends and fans from around the world in a fully-explorable 3D stadium concert experience. </p>
                     <div class="m-t-20">
-                        <a class="white-btn" href="javascript:void(0);">Get The Stageverse App</a>
+                        <a class="white-btn" href="javascript:void(0);">Get The Stageverse App <img class="btn-arrow" src="assets/images/ui-assets/black-arrow.png" /></a>
                     </div>
                 </div>
                 <div class="flex-1">
@@ -70,61 +70,196 @@
                 </div>
             </div>
             <!-- ==================================== -->
-
             <div class="muse-video">
                 
             </div>
             <!-- ==================================== -->
-
             <div>
                 <div class="title-container">
                     <h1 class="title-sm">gallery</h1>
                     <h1 class="title-lg">CHECK IT OUT</h1>
                 </div>
             </div>
-            <div class="gallery">
-                <div class="gallery-image">
-                    <div class="gallery-text-box">
-                        <h3 class="h-3">MUSE x balmain</h3>
-                        <p class="p-3">Flex your style with full-body, expressive avatars.</p>
+            <owl-carousel-o [options]="customOptions" class="gallery">
+                <ng-template carouselSlide>
+                    <div class="gallery-image" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <h3 class="h-3">MUSE x balmain</h3>
+                                <p class="p-3">Flex your style with full-body, expressive avatars.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="gallery-image">
-                    <div class="gallery-text-box">
-                        <h3 class="h-3">MUSE x balmain</h3>
-                        <p class="p-3">Flex your style with full-body, expressive avatars.</p>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <h3 class="h-3">MUSE x balmain</h3>
+                                <p class="p-3">Flex your style with full-body, expressive avatars.</p>
+                            </div>
+                        </div>
                     </div>
-
-                </div>
-                <div class="gallery-image">
-                    <div class="gallery-text-box">
-                        <h3 class="h-3">MUSE x balmain</h3>
-                        <p class="p-3">Flex your style with full-body, expressive avatars.</p>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <h3 class="h-3">MUSE x balmain</h3>
+                                <p class="p-3">Flex your style with full-body, expressive avatars.</p>
+                            </div>
+                        </div>
                     </div>
-
-                </div>
-                <div class="gallery-image">
-                    <div class="gallery-text-box">
-                        <h3 class="h-3">MUSE x balmain</h3>
-                        <p class="p-3">Flex your style with full-body, expressive avatars.</p>
+                </ng-template >
+                <ng-template carouselSlide>
+                    <div class="gallery-image" >
+                        <div class="text-box-gradient">
+                            <div class="gallery-text-box">
+                                <h3 class="h-3">MUSE x balmain</h3>
+                                <p class="p-3">Flex your style with full-body, expressive avatars.</p>
+                            </div>
+                        </div>
                     </div>
-
-                </div>
-            </div>
+                </ng-template >
+        </owl-carousel-o>
             <!-- =============================================================== -->
+           
             <div>
                 <div class="title-container">
                     <h1 class="title-sm">faq</h1>
                     <h1 class="title-lg">LEarn more</h1>
                 </div>
             </div> 
-            <div class="container-flex">
-                <div class="flex-1">
-
+            <div class="container-flex" style="margin-top: 2vh;">
+                <div class="flex-1 faq-box-padding">
+                    <mat-accordion>
+                        <mat-expansion-panel [expanded]="true">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            <h2 class="faq-heading">This is a question?</h2>
+                            </mat-panel-title>
+                            <!-- <mat-panel-description>
+                            Type your name and age
+                            </mat-panel-description> -->
+                        </mat-expansion-panel-header>
+                    
+                       <p class="faq-text">This is a mixed reality experience of the Simulation Theory world tour, captured at the sold out Madrid’s Wanda Metropolitano Stadium. You can meet up with friends and fellow fans at the Muse virtual venue in the Stageverse as avatars, and experience the show from over 17 different viewpoints around the stadium. </p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            <h2 class="faq-heading">This is a question?</h2>
+                            </mat-panel-title>
+                            <!-- <mat-panel-description>
+                            Type your name and age
+                            </mat-panel-description> -->
+                        </mat-expansion-panel-header>
+                    
+                       <p class="faq-text">This is a mixed reality experience of the Simulation Theory world tour, captured at the sold out Madrid’s Wanda Metropolitano Stadium. You can meet up with friends and fellow fans at the Muse virtual venue in the Stageverse as avatars, and experience the show from over 17 different viewpoints around the stadium. </p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            <h2 class="faq-heading">This is a question?</h2>
+                            </mat-panel-title>
+                            <!-- <mat-panel-description>
+                            Type your name and age
+                            </mat-panel-description> -->
+                        </mat-expansion-panel-header>
+                    
+                       <p class="faq-text">This is a mixed reality experience of the Simulation Theory world tour, captured at the sold out Madrid’s Wanda Metropolitano Stadium. You can meet up with friends and fellow fans at the Muse virtual venue in the Stageverse as avatars, and experience the show from over 17 different viewpoints around the stadium. </p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            <h2 class="faq-heading">This is a question?</h2>
+                            </mat-panel-title>
+                            <!-- <mat-panel-description>
+                            Type your name and age
+                            </mat-panel-description> -->
+                        </mat-expansion-panel-header>
+                    
+                       <p class="faq-text">This is a mixed reality experience of the Simulation Theory world tour, captured at the sold out Madrid’s Wanda Metropolitano Stadium. You can meet up with friends and fellow fans at the Muse virtual venue in the Stageverse as avatars, and experience the show from over 17 different viewpoints around the stadium. </p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            <h2 class="faq-heading">This is a question?</h2>
+                            </mat-panel-title>
+                            <!-- <mat-panel-description>
+                            Type your name and age
+                            </mat-panel-description> -->
+                        </mat-expansion-panel-header>
+                    
+                       <p class="faq-text">This is a mixed reality experience of the Simulation Theory world tour, captured at the sold out Madrid’s Wanda Metropolitano Stadium. You can meet up with friends and fellow fans at the Muse virtual venue in the Stageverse as avatars, and experience the show from over 17 different viewpoints around the stadium. </p>
+                        </mat-expansion-panel>
+                        <!-- <mat-expansion-panel (opened)="panelOpenState = true"
+                                            (closed)="panelOpenState = false">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            Self aware panel
+                            </mat-panel-title>
+                            <mat-panel-description>
+                            Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <p>I'm visible because I am open</p>
+                        </mat-expansion-panel> -->
+                    </mat-accordion>
                 </div>
-                <div class="flex-1">
-
+                <div class="flex-1 faq-box-padding">
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            <h2 class="faq-heading">This is a question?</h2>
+                            </mat-panel-title>
+                            <!-- <mat-panel-description>
+                            Type your name and age
+                            </mat-panel-description> -->
+                        </mat-expansion-panel-header>
+                    
+                       <p class="faq-text">This is a mixed reality experience of the Simulation Theory world tour, captured at the sold out Madrid’s Wanda Metropolitano Stadium. You can meet up with friends and fellow fans at the Muse virtual venue in the Stageverse as avatars, and experience the show from over 17 different viewpoints around the stadium. </p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            <h2 class="faq-heading">This is a question?</h2>
+                            </mat-panel-title>
+                            <!-- <mat-panel-description>
+                            Type your name and age
+                            </mat-panel-description> -->
+                        </mat-expansion-panel-header>
+                    
+                       <p class="faq-text">This is a mixed reality experience of the Simulation Theory world tour, captured at the sold out Madrid’s Wanda Metropolitano Stadium. You can meet up with friends and fellow fans at the Muse virtual venue in the Stageverse as avatars, and experience the show from over 17 different viewpoints around the stadium. </p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            <h2 class="faq-heading">This is a question?</h2>
+                            </mat-panel-title>
+                            <!-- <mat-panel-description>
+                            Type your name and age
+                            </mat-panel-description> -->
+                        </mat-expansion-panel-header>
+                    
+                       <p class="faq-text">This is a mixed reality experience of the Simulation Theory world tour, captured at the sold out Madrid’s Wanda Metropolitano Stadium. You can meet up with friends and fellow fans at the Muse virtual venue in the Stageverse as avatars, and experience the show from over 17 different viewpoints around the stadium. </p>
+                        </mat-expansion-panel>
+                        <!-- <mat-expansion-panel (opened)="panelOpenState = true"
+                                            (closed)="panelOpenState = false">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                            Self aware panel
+                            </mat-panel-title>
+                            <mat-panel-description>
+                            Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <p>I'm visible because I am open</p>
+                        </mat-expansion-panel> -->
+                    </mat-accordion>
                 </div>
+               
             </div>
             <!-- =========================================================== -->
             <div>
