@@ -128,6 +128,7 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     },
    
   }
+  menu:boolean=false;
   constructor(private _pubSubService: PubSubService,
     private _renderer: Renderer2,
     private _backgroundService: BackgroundService,
@@ -151,7 +152,10 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
   //     // this.init();
   //   }, 100);
   // }
-  
+  showHide(){
+    console.log('2222')
+    this.menu==false ? this.menu=true : this.menu=false;
+  }
 
   handleOverlayOpen() {
     this.isOverlayOpen = true;

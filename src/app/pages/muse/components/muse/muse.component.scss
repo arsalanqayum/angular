@@ -65,9 +65,6 @@
     padding: 1vh 1vh 1vh 6vh;
 }
 .paragraph{
-    font-family: Circular Std;
-    font-style: normal;
-    font-weight: normal;
     font-size: 3.7vh;
     line-height: 130%;
     letter-spacing: -0.01em;
@@ -76,13 +73,14 @@
     
 }
 .paragraph-width{
-    width: 34.4vw;
+    width: 38.4vw;
 }
 .white-btn{
-    padding: 15px 50px;
+    padding: 16px 60px 16px 35px;
     margin-top: 40px;
     background-color: #ffffff;
     font-size: 22px;
+    font-weight: bold;
     border-radius: 45px;
     color: #0A091A;
 }
@@ -122,22 +120,159 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    background-size: 90% 90%;
+    background-size: 92.5% 100%;
+    margin-top: 16vh;
 }
 .gallery{
     height: 70vh;
+    margin-left: 40px;
     display: flex;
     flex-direction: row;
 
 }
-.gallery-image{
+.gallery-image-1{
     height: 70vh;
-    background-image: url('/assets/images/ui-assets/women.png');
+    background:url('/assets/images/ui-assets/gallery-1.png'), rgba(255, 255, 255, 0.1);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     flex: 1;
     margin: 10px;
+}
+.gallery-image-2{
+    height: 70vh;
+    background: url('/assets/images/ui-assets/gallery-2.png'), rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 1;
+    margin: 10px;
+}
+.gallery-image-3{
+    height: 70vh;
+    background: url('/assets/images/ui-assets/gallery-3.png'), rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 1;
+    margin: 10px;
+}
+.gallery-image-4{
+    height: 70vh;
+    background: url('/assets/images/ui-assets/gallery-4.png'), rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 1;
+    margin: 10px;
+}
+.gallery-image-5{
+    height: 70vh;
+    background: url('/assets/images/ui-assets/Stage04M_T05_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 1;
+    margin: 10px;
+}
+.gallery-image-6{
+    height: 70vh;
+    background: url('/assets/images/ui-assets/Stage04F_T05_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 1;
+    margin: 10px;
+}
+.gallery-image-7{
+    height: 70vh;
+    background: url('/assets/images/ui-assets/Stage04M_T02_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 1;
+    margin: 10px;
+}
+.gallery-image-8{
+    height: 70vh;
+    background: url('/assets/images/ui-assets/Stage04F_T02_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 1;
+    margin: 10px;
+}
+.gallery-image-9{
+    height: 70vh;
+    background: url('/assets/images/ui-assets/Stage04M_T08_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 1;
+    margin: 10px;
+}
+.gallery-image-10{
+    height: 70vh;
+    background: url('/assets/images/ui-assets/Stage04F_T08_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 1;
+    margin: 10px;
+}
+.gallery-image-11{
+    height: 70vh;
+    background: url('/assets/images/ui-assets/Stage04M_T10_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 1;
+    margin: 10px;
+}
+.gallery-image-12{
+    height: 70vh;
+    background: url('/assets/images/ui-assets/Stage04F_T10_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 1;
+    margin: 10px;
+}
+.gallery-image-13{
+    height: 70vh;
+    background: url('/assets/images/ui-assets/Stage04M_T06_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 1;
+    margin: 10px;
+}
+.gallery-image-14{
+    height: 70vh;
+    background: url('/assets/images/ui-assets/Stage04F_T06_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 1;
+    margin: 10px;
+}
+.text-box-gradient{
+    // background:linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.265625) 79.17%, rgba(0, 0, 0, 0) 100%); 
+    height: 10vh;
+    position: relative;
+    top: 2.66vh;
+}
+.gallery-text-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 30px;
+}
+.img-left{
+    height: 4.79vh;
+}
+.img-right{
+    height: 6.38vh;
 }
 .faq-box-padding{
     padding: 0vh 16.5vh 0vh 6.5vh;
@@ -157,12 +292,16 @@
 ::ng-deep .mat-expansion-panel-header{
     padding: 0px 0px !important; 
     border-radius: 0px !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.45);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
     height: 86px !important;
 }
 ::ng-deep .mat-expansion-panel-body {
     padding: 25px 0px 25px !important;
     margin-bottom: 2vh !important;
+}
+::ng-deep .mat-expansion-indicator::after{
+    padding: 0px 12px 0px 5px !important;
+    transform: rotate(-1deg) !important; 
 }
 .h-3{
     font-style: normal;
@@ -182,16 +321,6 @@
     letter-spacing: -0.01em;
     font-feature-settings: 'ss02' on;
     color: #FFFFFF;
-}
-.text-box-gradient{
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.265625) 79.17%, rgba(0, 0, 0, 0) 100%); 
-    height: 17vh;
-    position: relative;
-    top: 53vh;
-}
-.gallery-text-box{
-    width: 80%;
-    margin-left: 3vw;
 }
 .title-container{
     width: 94%;
@@ -233,15 +362,20 @@
 .left-image-text-btn:hover{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)), #0A091A;
 }
+.download-container{
+    display: none;
+}
 .left-image-text-btn img{
     position: relative;
     top: 1px;
     left: 17px;
     height:3vh;
 }
+// ---------------------------footer--------------------------------
 .social-media-footer-container{
     display: flex;
     flex-direction: row;
+    gap: 3.2vh;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #fff;
@@ -255,16 +389,13 @@
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: #fff;
   }
-.download-container{
-    display: none;
-}
 .footer-small-text{
     width: 71%;
 }
 .logo-container{
-    margin-left: 5%;
-    width: 20%;
-    margin-top: 40px;
+    margin-left: 8%;
+    width: 14%;
+    margin-top: 15vh;
 }
 .footer-social-media{
     display: flex;
@@ -272,9 +403,85 @@
     margin-top: 3%;
 }
 .footer-sub-contianer{
-    margin-top: 24%;
-    width: 85%;
+    margin-top: 33%;
+    width: 92%;
 }
+.search{
+    font-weight: 500;
+    width: 100%;
+    height: 80px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 3.8vh;
+    border-left: 0px;
+    border-right: 0px;
+    background: #0b091a;
+}
+.input-icon{
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 80px;
+    line-height: 86px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-left: 0px;
+    padding-right: 2vw;
+    background: #0b091a;
+}
+.leftinput{
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-right: 0px;
+    background: #0b091a;
+    width: 50px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+}
+.footer-big-text{
+    margin-top: 7vh;
+    font-family: 'Druk Wide Bold';
+    letter-spacing: 0.04em;
+    line-height: 148%;
+    font-size: 2.55vw;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    padding-bottom: 50px;
+}
+.footer-sub-heading{
+    font-family: 'Druk Wide Bold';
+    font-weight: 500;
+    font-size: 3.1vh;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+}
+.footer-p-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vh;
+    line-height: 130%;
+    margin-top: 3vh;
+    letter-spacing: -0.01em;
+}
+.footer-bottom{
+    width: 94vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.link-font{
+    font-size: 3.5vh;
+}
+.links-a{
+    color: white;
+}
+.links-a:hover{
+    // background: linear-gradient(0deg, rgba(123, 97, 255, 0.2), rgba(123, 97, 255, 0.2)), #FFFFFF;
+    color: #665BFF
+}
+.links-a img:hover{
+    opacity: 0.5;
+    background-size: contain;
+}
+// xxxxxxxxxxxxxxxxxxxxxxEnd of Footer mediaxxxxxxxxxxxxxxxxxxxxxx
 .join-our-discord{
     margin-left: 20px;
 }
@@ -311,10 +518,6 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
@@ -336,10 +539,6 @@
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -395,9 +594,6 @@
     position: relative;
     top: 37%;
 }
-.social-media-footer{
-    margin: 0px 8px;
-}
 .example-collection-item {
     display: -webkit-box;
     display: -webkit-flex;
@@ -431,70 +627,6 @@
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
 }
-.search{
-
-    font-weight: 500;
-    width: 100%;
-    height: 52px;
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    color: #fff;
-    font-size: 20px;
-    border-left: 0px;
-    border-right: 0px;
-    background: #0b091a;
-}
-.input-icon{
-
-    border-bottom-right-radius: 40px;
-    border-top-right-radius: 40px;
-    height: 52px;
-    line-height: 69px;
-    border: 1px solid #FFFFFF;
-    border-left: 0px;
-    padding-right: 0.5vw;
-    background: #0b091a;
-}
-.leftinput{
-    border: 1px solid #FFFFFF;
-
-    border-right: 0px;
-    background: #0b091a;
-    width: 38px;
-    border-bottom-left-radius: 40px;
-    border-top-left-radius: 40px;
-}
-.footer-big-text{
-    margin-top: 28%;
-    font-family: 'Druk Wide Bold';
-    letter-spacing: 0.04em;
-    line-height: 148%;
-    font-size: 2vw;
-    font-style: normal;
-    font-weight: normal;
-    color: #FFFFFF;
-    padding-bottom: 50px;
-}
-.footer-sub-heading{
-    font-family: 'Druk Wide Bold';
-    font-weight: 500;
-    font-size: 1.35vw;
-    line-height: 130%;
-    letter-spacing: -0.01em;
-}
-.footer-p-text{
-    font-family: Circular Std;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.24vw;
-    line-height: 130%;
-    letter-spacing: -0.01em;
-}
-.footer-bottom{
-    width: 94vw;
-    margin-left: auto;
-    margin-right: auto;
-}
 // ================================================================================================================================
 //                                                  MOBILE VIEWS CSS START
 // ================================================================================================================================
@@ -510,7 +642,7 @@
 .title-sm{
     font-size: 14px;
     margin-top: 0px;
-    line-height: 18px;
+    line-height: 50px;
 }
 .title-lg{
     height: 30px;
@@ -523,6 +655,7 @@
 .muse-title{
     font-size: 35px;
     line-height: 130%;
+    width: 90%;
 }
 .container-flex{
     flex-direction: column;
@@ -538,7 +671,8 @@
     margin-top: 20px;
     width: 300px;
     height: 50px;
-    padding: 15px 15px;
+    font-size: 20px;
+    padding: 12px 25px;
 }
 .btn-arrow{
     left: 5px;
@@ -547,12 +681,24 @@
     height: 450px;
     background-size: 100% 100%;
 }
+.gallery-text-box{
+    margin: 0px 10px;
+}
+.gallery{
+    margin-left: 0px;
+}
 .text-box-gradient{
     height: 16vh;
-    top: 46vh;
+    top: 20px;
+}
+.img-left{
+    height: 3.5vh;
+}
+.img-right{
+    height: 4.5vh;
 }
 .faq-box-padding{
-    padding: 0vh 4vh;
+    padding: 0vh 3vh;
 }
 .faq-heading{
     font-size: 20px;
@@ -565,11 +711,14 @@
 ::ng-deep .mat-expansion-panel-body {
     padding: 0px !important;
 }
+::ng-deep .mat-expansion-panel-header{
+    height: 60px !important;
+}
 .flex-2{
-    padding: 1vh 1vh 1vh 4vh;
+    padding: 1vh 1vh 1vh 3vh;
 }
 .p-t-20{
-    padding: 2vh 0vh 2.5vh 4vh;
+    padding: 2vh 0vh 2.5vh 3vh;
 }
 .sm-head{
     font-size: 18px;
@@ -577,7 +726,7 @@
 }
 .muse-video{
     height: 185px;
-    background-size: cover;
+    background-size: 90% 100%;
 }
 .download-container{
     display: block !important;
@@ -587,7 +736,7 @@
 .download-img-btn{
     display: block;
     position: relative;
-    left: 30px;
+    left: 20px;
     top: 40px;
     margin: 17px 0px;
 }
@@ -607,7 +756,7 @@
     color: #0A091A;
     margin-top: 60px;
     width: 350px;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .left-image-text-btn{
     padding: 12px 30px 15px 25px;
@@ -624,6 +773,7 @@
 .logo-container{
     margin-top: 0px;
     margin-left: 5%;
+    width: 22%;
 }
 .footer-big-text{
     font-size: 30px;
@@ -635,7 +785,7 @@
 .footer-sub-contianer{
     margin-top: 10%;
     width: 82%;
-    margin-left: 30px;
+    margin-left: 21px;
 }
 .footer-p-text{
     font-size: 20px;
@@ -643,6 +793,15 @@
 }
 .footer-small-text{
     width: 85%;
+    font-size: 20px;
+}
+.input-icon{
+    height: 50px;
+    line-height: 60px;
+    padding-right: 5vw;
+}
+.search{
+    height: 50px;
     font-size: 20px;
 }
 .social-media-footer-container{
@@ -669,37 +828,8 @@
 }
 
 .title-container{
-    margin-top: 4.5vh;
-    width: 86%;
-    padding: 10px 0px;
+    margin-top: 2.5vh;
+    width: 90%;
+    padding: 20px 0px;
 }
 }
-// =========================================End media 600==================================================
-// =========================================Start media 414 and less than 414px============================
-@media screen and (max-width: 414px) {
-   
- }
- // ============================================End of 414===================================================
-// =========================================Start media 411 and less than 411px============================
-@media screen and (max-width: 411px) {
-   
-}
-// ============================================End of 411===================================================
-
-// =========================================Start media 375 and less than 375px=============================
-@media screen and (max-width: 375px) {
-  
-}
-// ============================================End of 375====================================================
-
-// =========================================Start media 360 and less than 360px==============================
-@media screen and (max-width: 360px) {
-   
-}
-// ============================================End of 360====================================================
-
-// =========================================Start media 320 and less than 320px==============================
-@media screen and (max-width: 320px) {
-   
-}
-// ============================================End of 320=====================================================
