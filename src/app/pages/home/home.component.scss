@@ -1106,6 +1106,12 @@
     padding-right: 30px;
 }
 // ========end of footer mobile css============
+.margin-bottom{
+    margin-bottom: 15px;
+}
+.image-width{
+    width: 95%;
+}
 }
 // =========================================End media 600==================================================
 // =========================================Start media 414 and less than 414px============================
@@ -1174,7 +1180,15 @@
         font-size: 18px;
         width: 295px;
     }
+    .title-container[_ngcontent-fks-c66] {
+        margin-top: 4.5vh;
+        width: 86%;
+        padding: 10px 0px;
+        margin-bottom: 10px !important;
+    }
 }
+
+
 // ============================================End of 360====================================================
 
 // =========================================Start media 320 and less than 320px==============================
