@@ -289,6 +289,13 @@
     letter-spacing: -0.02em;
     opacity: 0.7;
 }
+::ng-deep .mat-expansion-panel{
+    background: #0A091A !important;
+    color: #fff !important;
+}
+::ng-deep .mat-expansion-panel-header-title{
+    color: #fff !important;
+}
 ::ng-deep .mat-expansion-panel-header{
     padding: 0px 0px !important; 
     border-radius: 0px !important;
@@ -302,6 +309,7 @@
 ::ng-deep .mat-expansion-indicator::after{
     padding: 0px 12px 0px 5px !important;
     transform: rotate(-1deg) !important; 
+    color: #fff;
 }
 .h-3{
     font-style: normal;

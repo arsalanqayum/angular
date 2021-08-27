@@ -13,7 +13,7 @@ export class MuseComponent implements OnInit {
   CarouselOptions = { items: 3, dots: true, nav: true }; 
   customOptions: OwlOptions = {
    
-    loop: true,
+    loop: false,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
@@ -23,46 +23,46 @@ export class MuseComponent implements OnInit {
     navText: ['', ''],
     responsive: {
       0: {
-        items: 1.15
+        items: 1
       },
       300: {
-        items: 1.15,
+        items: 1,
         stagePadding: 15,
         dots: false,
         nav: false,
       },
       350: {
-        items: 1.15,
+        items: 1,
         stagePadding: 15,
         dots: false,
         nav: false,
       },
       400: {
-        items: 1.15,
+        items: 1,
         stagePadding: 15,
         dots: false,
         nav: false,
       },
       450: {
-        items: 1.15,
+        items: 1,
         stagePadding: 15,
         dots: false,
         nav: false,
       },
       500: {
-        items: 1.15,
-        stagePadding: 15,
+        items: 1,
+        stagePadding: 25,
         dots: false,
         nav: false,
       },
       550: {
-        items: 1.15,
+        items: 1,
         stagePadding: 25,
         dots: false,
         nav: false,
       },
       600: {
-        items: 1.15,
+        items: 1,
         stagePadding: 25,
         dots: false,
         nav: false,

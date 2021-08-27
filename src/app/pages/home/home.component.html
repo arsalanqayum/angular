@@ -24,17 +24,17 @@
            </a></li>
         </ul>
       
-        <ul *ngIf="menu==true" class="nav">
+        <ul *ngIf="menu==true" class="nav-mobile">
             
-            <li class="nav-item "  style="display: flex;gap: 1px; float:right">
+            <li class="nav-item-mobile" >
                 <a [routerLink]="" (click)="showEarlyAccess()" action="early-access"  class="nav-link" >
-                    <img src="/assets/images/ui-assets/apple-button.png" style="height: 60px;">
+                    <img src="/assets/images/ui-assets/apple-button.png" style="height: 40px;">
                 </a>
                 <a [routerLink]="" (click)="showEarlyAccess()" action="early-access"  class="nav-link">
-                    <img src="/assets/images/ui-assets/android-button.png" style="height: 60px;">
+                    <img src="/assets/images/ui-assets/android-button.png" style="height: 40px;">
                 </a>
                 <a [routerLink]="" (click)="showEarlyAccess()" action="early-access" class="nav-link" >
-                    <img src="/assets/images/ui-assets/ring.png" style="height: 60px;">
+                    <img src="/assets/images/ui-assets/ring.png" style="height: 40px;">
                 </a>
             </li>
         </ul>
