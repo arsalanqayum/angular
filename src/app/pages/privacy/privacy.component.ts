@@ -9,6 +9,7 @@ import { ScrollService } from '../../services/scroll/scroll.service';
 })
 export class PrivacyComponent extends PageComponent implements OnInit, AfterViewInit {
 
+  menu:boolean=false;
   constructor(_scrollService: ScrollService) {
     super(_scrollService);
   }

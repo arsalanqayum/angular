@@ -10,6 +10,7 @@ import { ScrollService } from '../../services/scroll/scroll.service';
 })
 export class TermsComponent extends PageComponent implements OnInit {
 
+  menu:boolean=false;
   constructor(_scrollService: ScrollService) { 
     super(_scrollService);
   }

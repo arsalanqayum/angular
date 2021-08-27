@@ -18,10 +18,25 @@
                         <img src="/assets/images/ui-assets/ring.png" style="height: 60px;">
                     </a>
                 </li>
-               <li class="nav-item disktop-hide" style="float: right !important; margin-top: -15px;"><a href="javascript:void(0);" class="nav-link">
-                   <img src="/assets/images/ui-assets/menu-icon.png" style="height: 50px;" />
-               </a></li>
+                <li class="nav-item disktop-hide" style="float: right !important; margin-top: -15px;" (click)="menu=!menu"><a href="javascript:void(0);"  class="nav-link">
+                    <img src="/assets/images/ui-assets/menu-icon.png" style="height: 50px;" />
+                </a></li>
                <!-- <li class="nav-item"><a href="#" class="nav-link">Home</a></li> -->
+            </ul>
+
+            <ul *ngIf="menu==true" class="nav-mobile">
+                
+                <li class="nav-item-mobile" >
+                    <a [routerLink]="" (click)="showEarlyAccess()" action="early-access"  class="nav-link" >
+                        <img src="/assets/images/ui-assets/apple-button.png" style="height: 40px;">
+                    </a>
+                    <a [routerLink]="" (click)="showEarlyAccess()" action="early-access"  class="nav-link">
+                        <img src="/assets/images/ui-assets/android-button.png" style="height: 40px;">
+                    </a>
+                    <a [routerLink]="" (click)="showEarlyAccess()" action="early-access" class="nav-link" >
+                        <img src="/assets/images/ui-assets/ring.png" style="height: 40px;">
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="body">
@@ -563,5 +578,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="content footer footer-mt" >
+            <app-footer></app-footer>
         </div>
 </div>

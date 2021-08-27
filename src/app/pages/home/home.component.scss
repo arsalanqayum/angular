@@ -478,8 +478,26 @@
       margin-left: 16%;
   
   }
+  
+.video-container { 
+      position:relative;
+      
+     }
+.video-size{
+    width: 99%;
+    height: 75vh;
+    object-fit: cover;
+}
+.video-container  video {
+    position:relative;
+    z-index:0;
+}
+.overlay {
+    position:absolute;
+    z-index:1;
+}
   .stageverse-1{
-      background-image: url('/assets/images/ui-assets/women.png');
+      background-image: url('/assets/images/ui-assets/video-1.gif');
       background-size: 100% 100%; 
       background-repeat: no-repeat; 
       height: 75vh;    
@@ -726,6 +744,10 @@
     margin-top: 3vh;
     letter-spacing: -0.01em;
 }
+.footer-mt{
+    margin-top: 120px; 
+    background: rgba(0, 0, 0, 0.5);
+}
 .footer-bottom{
     width: 94vw;
     margin-left: auto;
@@ -899,10 +921,10 @@
 }
 .stageverse-content{
     margin-left: 5%;
-    top: 46vh;
+    top: 58vh;
 }
 .stageverse-text{
-    width: 207px ;
+    width: 230px ;
     font-size: 20px;
     line-height: 110%;
     letter-spacing: -0.01em;
@@ -1076,6 +1098,9 @@
 .social-media-footer-container{
     margin-top: 40px;
     margin-bottom: 30px;
+}
+.footer-mt{
+    margin-top: 40px;
 }
 .social-media-footer{
     padding-right: 30px;

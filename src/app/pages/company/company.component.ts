@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompanyComponent implements OnInit {
 
+  menu:boolean=false;
   constructor() { }
 
   ngOnInit(): void {

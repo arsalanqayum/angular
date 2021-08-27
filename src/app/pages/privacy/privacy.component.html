@@ -18,10 +18,25 @@
                     <img src="/assets/images/ui-assets/ring.png" style="height: 60px;">
                 </a>
             </li>
-           <li class="nav-item disktop-hide" style="float: right !important; margin-top: -15px;"><a href="#" class="nav-link">
-               <img src="/assets/images/ui-assets/menu-icon.png" style="height: 50px;" />
-           </a></li>
+            <li class="nav-item disktop-hide" style="float: right !important; margin-top: -15px;" (click)="menu=!menu"><a href="javascript:void(0);"  class="nav-link">
+                <img src="/assets/images/ui-assets/menu-icon.png" style="height: 50px;" />
+            </a></li>
            <!-- <li class="nav-item"><a href="#" class="nav-link">Home</a></li> -->
+        </ul>
+
+        <ul *ngIf="menu==true" class="nav-mobile">
+            
+            <li class="nav-item-mobile" >
+                <a [routerLink]="" action="early-access"  class="nav-link" >
+                    <img src="/assets/images/ui-assets/apple-button.png" style="height: 40px;">
+                </a>
+                <a [routerLink]=""  action="early-access"  class="nav-link">
+                    <img src="/assets/images/ui-assets/android-button.png" style="height: 40px;">
+                </a>
+                <a [routerLink]=""  action="early-access" class="nav-link" >
+                    <img src="/assets/images/ui-assets/ring.png" style="height: 40px;">
+                </a>
+            </li>
         </ul>
     </div>
     <div class="body">
@@ -55,19 +70,19 @@
                         <h4 class="sm-head"> Links</h4>
                         <ul>
                             <li class="p-y-10">
-                                <a routerLink="/company" class="links-a">Company</a>
+                                <a routerLink="/company" class="links-a link-font">Company</a>
                             </li>
                             <li class="p-y-10">
-                                <a routerLink="/creators"  class="links-a">Creators</a>
+                                <a routerLink="/creators"  class="links-a link-font">Creators</a>
                             </li>
                             <li class="p-y-10">
-                                <a routerLink="/press"  class="links-a">Press</a>
+                                <a routerLink="/press"  class="links-a link-font">Press</a>
                             </li>
                             <li class="p-y-10">
-                                <a routerLink="/privacy"  class="links-a">Privacy</a>
+                                <a routerLink="/privacy"  class="links-a link-font">Privacy</a>
                             </li>
                             <li class="p-y-10">
-                                <a routerLink="/terms-of-service"  class="links-a">Terms</a>
+                                <a routerLink="/terms-of-service"  class="links-a link-font">Terms</a>
                             </li>
                         </ul>
                     </div>
@@ -84,7 +99,7 @@
             </div>
         </div>
         <div>
-            <div class="download-container">
+            <div class="download-container download-container-hide">
                 <a href="#" > <img src="/assets/images/ui-assets/ios-btn.png" class="download-img-btn" /></a>
                 <a href="#" ><img src="/assets/images/ui-assets/android-btn.png" class="download-img-btn" /></a>
                 <a href="#" ><img src="/assets/images/ui-assets/quest-btn.png" class="download-img-btn" /></a>
@@ -145,12 +160,14 @@
                     <div class="example-collection-item" >
                         <div class="logo-container">
                             <img class="footer-logo" src="assets/images/ui-assets/Logo-comb.png" />
-                            <h1 class="footer-big-text">CAREERS
-                                CREATORS
-                                PRESS
-                                COMPANY
-                                BLOG
-                                SUPPORT</h1>
+                            <h1 class="footer-big-text">
+                                <li><a routerLink="/careers" class="links-a">CAREERS</a></li>
+                                <li><a routerLink="/creators" class="links-a">CREATORS</a></li>
+                                <li><a routerLink="/press" class="links-a">PRESS</a></li>
+                                <li><a routerLink="/company" class="links-a">COMPANY</a></li>
+                                <li><a routerLink="/blog" class="links-a">BLOG</a></li>
+                                <li><a routerLink="/support" class="links-a">SUPPORT</a></li>
+                                 </h1>
                         </div>
                     </div>
                 </div>
@@ -160,7 +177,7 @@
                         <h2 class="footer-sub-heading">FUTURE CULTURE HAPPENS HERE.</h2>
                         <p class="footer-p-text">Stageverse is an NFT-based metaverse of beautifully designed 3D spaces, called Stages, that aims to connect a vibrant, diverse and pioneering collective of people, creators, communities and brands. The collective use Stageverse to socialize, connect, create, discover, grow, elevate creativity and move culture forward.</p>
 
-                    <div style="display: flex;flex-direction: row;">
+                    <div style="display: flex;flex-direction: row; margin-top: 7vh;">
 
                     <div class="leftinput" >
 
@@ -173,14 +190,14 @@
                     </div>
                         <div class="footer-social-media">
                             <div class="footer-small-text">
-                                <p style="font-size: 12px;">By signing up you are agreeing to the Stageverse <a style="text-decoration: underline;color: #fff;">Terms of Service</a> and Stageverse <a style="text-decoration: underline;color: #fff;">Privacy Policy</a>. You may unsubscribe at any time.</p>
+                                <p style="font-size: 1.9vh;">By signing up you are agreeing to the Stageverse <a routerLink="/terms-of-service" class="links-a" style="text-decoration: underline;">Terms of Service</a> and Stageverse <a routerLink="/privacy" class="links-a" style="text-decoration: underline;">Privacy Policy</a>. You may unsubscribe at any time.</p>
 
                             </div>
                             <div class="social-media-footer-container">
-                                <a href="#" class="social-media-footer"><img src="assets/images/ui-assets/instagram.png" alt="instagram icon"></a>
-                                <a href="#" class="social-media-footer"><img src="assets/images/ui-assets/panda.png" alt="social icon"></a>
-                                <a href="#" class="social-media-footer"><img src="assets/images/ui-assets/linkedIn.png" alt="linkedIn icon"></a>
-                                <a href="#" class="social-media-footer"><img src="assets/images/ui-assets/twitter.png" alt="twitter icon"></a>
+                                <a href="#" class="social-media-footer links-a"><img src="assets/images/ui-assets/instagram.png" alt="instagram icon"></a>
+                                <a href="#" class="social-media-footer links-a"><img src="assets/images/ui-assets/panda.png" alt="social icon"></a>
+                                <a href="#" class="social-media-footer links-a"><img src="assets/images/ui-assets/linkedIn.png" alt="linkedIn icon"></a>
+                                <a href="#" class="social-media-footer links-a"><img src="assets/images/ui-assets/twitter.png" alt="twitter icon"></a>
 
                             </div>
                         </div>
@@ -190,7 +207,8 @@
             </div>
         </div>
     </div>
-    <div class="content footer">
-        <app-footer></app-footer>
-    </div>
+
+<div class="content footer footer-mt" >
+    <app-footer></app-footer>
+</div>
 </div>

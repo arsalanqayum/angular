@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { PubSubService } from 'src/app/core/pub-sub.service';
+import { BackgroundService } from 'src/app/shared/background/background.service';
+import { ModalService } from 'src/app/shared/overlay/modal.service';
+import { OverlayViewEarlyAccessComponent } from 'src/app/shared/overlay/overlay-view-early-access/overlay-view-early-access.component';
 @Component({
   selector: 'app-muse',
   templateUrl: './muse.component.html',
@@ -76,13 +80,31 @@ export class MuseComponent implements OnInit {
     },
    
   }
-  constructor() { }
+  menu:boolean=false;
+  constructor(private _pubSubService: PubSubService,
+    private _renderer: Renderer2,
+    private _backgroundService: BackgroundService,
+    private _modalService: ModalService) { }
+
 
   ngOnInit() {
 
   }
 
-  
+  showEarlyAccess(): void {
+    // this.handleOverlayOpen();
+    this._modalService.showModal(OverlayViewEarlyAccessComponent, {
+      allowOverlayClick: true,
+      modalElementId: 'early-access-modal',
+      showCloseButton: true,
+      data: {
+        modalTitle: 'This is the sample modal'
+      },
+      whenClosed: () => {
+        // this.handleOverlayClose();
+      }
+    });
+  }
 
 
 

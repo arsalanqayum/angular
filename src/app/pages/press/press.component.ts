@@ -73,6 +73,7 @@ export class PressComponent extends PageComponent implements OnInit, AfterViewIn
     },
    
   }
+  menu:boolean=false;
   constructor(_scrollService: ScrollService) {
     super(_scrollService);
   }

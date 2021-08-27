@@ -26,3 +26,18 @@
 // @import './vendors';
 
 // @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.nav-mobile{
+    height: 80px;
+    margin: 0px auto;
+    width: 220px;
+    list-style-type: none;
+    overflow: hidden;
+}
+.nav-item-mobile{
+    display: flex;
+    gap: 1px;
+    line-height: 60px;
+    float: left;
+    margin-top: 10px;
+}
