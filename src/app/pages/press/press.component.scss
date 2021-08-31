@@ -39,7 +39,7 @@
     background-image: url('/assets/images/ui-assets/press-cover.png');
     background-position: center;
     background-repeat: no-repeat;
-    height: 85vh;
+    height: 70vh;
     background-size: 100% 100%;
 
 }
@@ -130,6 +130,14 @@
     color: #0A091A;
     padding: 10px 31px;
 }
+
+.left-image-text-btn img{
+    position: relative;
+    top: 1px;
+    left: 17px;
+    height: 3vh;
+}
+
 .left-image-text-btn:hover{
     background: linear-gradient(0deg, rgba(123, 97, 255, 0.2), rgba(123, 97, 255, 0.2)), #FFFFFF;
     color: #0A091A;

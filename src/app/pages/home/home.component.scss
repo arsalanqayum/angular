@@ -1,4 +1,22 @@
 @import "./styles";
+.gradient{
+    position: relative;
+    top: 57vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.265625) 79.17%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(0deg);
+    height: 23%;
+}
+.gradient-2{
+    position: relative;
+    top: 53.9vh;
+    background: linear-gradient(
+0deg
+, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.265625) 79.17%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(
+0deg
+);
+    height: 23%;
+}
 .nav-container{
     background-color: #0A091A;
 }
@@ -123,10 +141,10 @@
     linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%),
     url('/assets/images/ui-assets/CenterStage.png');
     background-position: bottom;
-    background-size:cover;
+    background-size:100% 100%;
     object-fit: cover;
     background-repeat: no-repeat;
-    height: 130vh;
+    height: 136vh;
 }
 .cornor-image{
     background: url(/assets/images/ui-assets/cornor-background.png) no-repeat;
@@ -189,10 +207,11 @@
 }
 .right-header-content{
     position: relative;
-    top: 80%;
-     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    top: 88%;
+    left: 10%;
+    //  text-align: center;
+    // margin-left: auto;
+    // margin-right: auto;
 }
 .left-image-text-btn img{
     position: relative;
@@ -208,7 +227,8 @@
     font-size: 1.2vw;
     line-height: 110%;
     color: #FFFFFF;
-    padding: 10px 31px;
+    padding: 15px 25px;
+    padding-right: 68px;
 }
 .right-image-text-btn:hover{
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)), #0A091A;
@@ -217,7 +237,7 @@
 .right-image-text-btn img{
     position: relative;
     top: 1px;
-    left: 17px;
+    left: 34px;
     height:3vh;
 }
 .right-one{
@@ -262,11 +282,12 @@
     height: 74vh;
 }
 .paragraph{
-  margin-top: 0px;
-  margin-bottom: 3px;
-  font-weight: 600;
-  font-size: 16px;
-  text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    font-weight: bold;
+    font-size: 1.1vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 .example-collection-grid {
     display: -webkit-box;
@@ -336,7 +357,7 @@
     color: #FFFFFF;
 }
 .simulation-content-2{
-    position: relative;
+   
     top: 57vh;
     text-align: left;
     margin-left: 6%;
@@ -348,9 +369,8 @@
      margin-left: 5%;
   }
   .simulation-content-venues{
-      position: relative;
-      top: 79vh;
-     text-align: left;
+   
+      padding-top: 66px;
      margin-left: 6%;
   }
   .example-collection-cell {
@@ -358,7 +378,7 @@
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      padding: 5px;
+      padding: 10px;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
@@ -384,7 +404,7 @@
       background-size:100% 100%;
       object-fit: cover;
       background-repeat: no-repeat;
-         height: 90vh;
+         height: 70vh;
   }
   .muse-2{
       background-image: url('/assets/images/ui-assets/future-dome.png');
@@ -392,11 +412,11 @@
       background-size:100% 100%;
       object-fit: cover;
       background-repeat: no-repeat;
-         height: 90vh;
+         height: 70vh;
   }
   .muse-content{
       position: relative;
-      top: 66vh;
+      top: 56vh;
       margin-left: 6%;
   }
   
@@ -435,7 +455,7 @@
       background-size:100% 100%;
       object-fit: cover;
       background-repeat: no-repeat;
-      height: 80vh;
+      height: 66vh;
       background-position: center;
   }
   .collection-right{
@@ -443,7 +463,7 @@
       background-size:100% 100%;
       object-fit: cover;
       background-repeat: no-repeat;
-      height: 80vh;
+      height: 66vh;
       background-position: center;
   }
   .membership{
@@ -475,7 +495,6 @@
   .stageverse-content{
       position: relative;
       top: 57vh;
-      margin-left: 16%;
   
   }
   
@@ -493,8 +512,15 @@
     z-index:0;
 }
 .overlay {
-    position:absolute;
-    z-index:1;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient( 
+0deg
+ , rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.265625) 70.17%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate( 
+0deg
+ );
+    padding-bottom: 75px;
 }
   .stageverse-1{
       background-image: url('/assets/images/ui-assets/video-1.gif');
@@ -628,7 +654,6 @@
     -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
-    border-radius: 4px;
 }
 .example-collection-grid.nested {
     margin-top: -5px;
@@ -640,10 +665,13 @@
     flex-basis: 50%;
 }
 .stage-heading{
+    
     font-weight: bold;
-    font-size: 1.6rem;
-    letter-spacing: 0.021rem;
+    font-size: 1.60rem;
     line-height: 3rem;
+    text-transform: uppercase;
+    padding-left: 40px;
+
 }
 .stage-paragraph{
     font-weight: normal;
@@ -651,12 +679,14 @@
     letter-spacing: 0;
     line-height: 1.7rem;
     width: 80.9%;
+    margin-left: 40px;
 }
 // ===================================footer===============================
 .social-media-footer-container{
     display: flex;
     flex-direction: row;
     gap: 3.2vh;
+    margin-left: 1vh;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #fff;
@@ -760,12 +790,25 @@
     color: white;
 }
 .links-a:hover{
-    // background: linear-gradient(0deg, rgba(123, 97, 255, 0.2), rgba(123, 97, 255, 0.2)), #FFFFFF;
+    // background: linear-gradient(0deg, rgba(123, 97, 255, 0.2), rgba(123, 97, 255, 0.2)), #0A091A;
     color: #665BFF
 }
 .links-a img:hover{
     opacity: 0.5;
+    // color: blueviolet;
+
     background-size: contain;
+}
+
+.sum{
+    color: #0A091A !important;
+}
+.sum:hover{
+    color: #0A091A !important;
+}
+.sum img:hover{
+    opacity: 0.5 !important;
+    
 }
 // =============End of Footer css =======================================
 // ==================================================mobile view css=================================================>>>>>>>>>>>>>>
@@ -808,6 +851,23 @@
     margin: 0px 0px;
     width: 304px;
 }
+
+.simulation-content{
+    top: -11vh !important;
+}
+
+.gradient{
+    height: 5%;
+}
+
+.gradient-2{
+    height: 10%;
+}
+
+.simulation-content-venues{
+    padding-top: 0px;
+}
+
 .left-image-text-btn{
     padding: 12px 30px 15px 25px;
     font-size: 20px;
@@ -848,7 +908,8 @@
     font-size: 22px;
     line-height: 110%;
     color: #FFFFFF;
-    padding: 15px 40px;
+    padding: 15px 25px;
+    padding-right: 68px;
 }
 .membership-right{
     margin-top: 54px;
@@ -920,8 +981,9 @@
     background-size: cover;
 }
 .stageverse-content{
-    margin-left: 5%;
     top: 58vh;
+    padding-right: 52px;
+    margin-left: -3px;
 }
 .stageverse-text{
     width: 230px ;
@@ -994,6 +1056,7 @@
 }
 .simulation-content-2{
     top: 40vh;
+    margin-top: 50vh;
 }
 .simulation-2{
     height: 60vh;
@@ -1102,8 +1165,8 @@
 .footer-mt{
     margin-top: 40px;
 }
-.social-media-footer{
-    padding-right: 30px;
+.ali{
+    padding-left: 1px;
 }
 // ========end of footer mobile css============
 .margin-bottom{

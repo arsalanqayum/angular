@@ -131,126 +131,126 @@
 
 }
 .gallery-image-1{
-    height: 70vh;
-    background:url('/assets/images/ui-assets/gallery-1.png'), rgba(255, 255, 255, 0.1);
-    background-size: cover;
+    height: 56vh;
+    background: url(/assets/images/ui-assets/gallery-1.png), rgba(255, 255, 255, 0.1);
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     flex: 1;
     margin: 10px;
 }
 .gallery-image-2{
-    height: 70vh;
+    height: 56vh;
     background: url('/assets/images/ui-assets/gallery-2.png'), rgba(255, 255, 255, 0.1);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     flex: 1;
     margin: 10px;
 }
 .gallery-image-3{
-    height: 70vh;
+    height: 56vh;
     background: url('/assets/images/ui-assets/gallery-3.png'), rgba(255, 255, 255, 0.1);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     flex: 1;
     margin: 10px;
 }
 .gallery-image-4{
-    height: 70vh;
+    height: 56vh;
     background: url('/assets/images/ui-assets/gallery-4.png'), rgba(255, 255, 255, 0.1);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     flex: 1;
     margin: 10px;
 }
 .gallery-image-5{
-    height: 70vh;
+    height: 56vh;
     background: url('/assets/images/ui-assets/Stage04M_T05_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     flex: 1;
     margin: 10px;
 }
 .gallery-image-6{
-    height: 70vh;
+    height: 56vh;
     background: url('/assets/images/ui-assets/Stage04F_T05_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     flex: 1;
     margin: 10px;
 }
 .gallery-image-7{
-    height: 70vh;
+    height: 56vh;
     background: url('/assets/images/ui-assets/Stage04M_T02_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     flex: 1;
     margin: 10px;
 }
 .gallery-image-8{
-    height: 70vh;
+    height: 56vh;
     background: url('/assets/images/ui-assets/Stage04F_T02_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     flex: 1;
     margin: 10px;
 }
 .gallery-image-9{
-    height: 70vh;
+    height: 56vh;
     background: url('/assets/images/ui-assets/Stage04M_T08_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     flex: 1;
     margin: 10px;
 }
 .gallery-image-10{
-    height: 70vh;
+    height: 56vh;
     background: url('/assets/images/ui-assets/Stage04F_T08_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     flex: 1;
     margin: 10px;
 }
 .gallery-image-11{
-    height: 70vh;
+    height: 56vh;
     background: url('/assets/images/ui-assets/Stage04M_T10_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     flex: 1;
     margin: 10px;
 }
 .gallery-image-12{
-    height: 70vh;
+    height: 56vh;
     background: url('/assets/images/ui-assets/Stage04F_T10_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     flex: 1;
     margin: 10px;
 }
 .gallery-image-13{
-    height: 70vh;
+    height: 56vh;
     background: url('/assets/images/ui-assets/Stage04M_T06_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     flex: 1;
     margin: 10px;
 }
 .gallery-image-14{
-    height: 70vh;
+    height: 56vh;
     background: url('/assets/images/ui-assets/Stage04F_T06_OutfitSelect.png'), rgba(255, 255, 255, 0.1);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     flex: 1;
@@ -640,7 +640,9 @@
 // ================================================================================================================================
 // On screens that are 600px or less, set the css property
 @media screen and (max-width: 600px) {
-
+.sym{
+    display: none;
+}
 .sm-hide{
      display: none !important;
 }
@@ -658,7 +660,14 @@
     letter-spacing: 1px;
 }
 .muse-hero{
-    height: 550px;
+    height: 465px;
+}
+.muse-hero{
+    background-image: url(/assets/images/ui-assets/media.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 57vh;
+    background-size: 100% 100%;
 }
 .muse-title{
     font-size: 35px;
