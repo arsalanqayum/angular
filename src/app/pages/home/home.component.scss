@@ -81,9 +81,9 @@
     height: 16vh;
 }
 .nav-mobile{
-    height: 80px;
+    height: 100vh;
+    width: 370px;
     margin: 0px auto;
-    width: 220px;
     list-style-type: none;
     overflow: hidden;
 }
@@ -92,7 +92,8 @@
     gap: 1px;
     line-height: 60px;
     float: left;
-    margin-top: 10px;
+    margin-top: -50px;
+    margin-left: 18px;
 }
 .mobile{
     display: none;
@@ -800,6 +801,15 @@
     background-size: contain;
 }
 
+.about{
+    float: left;
+    margin-left: 2rem;
+    margin-top: -6.4rem;
+    font-size: 1.3rem;
+    letter-spacing: 0;
+    line-height: 1.686rem;
+}
+
 .sum{
     color: #0A091A !important;
 }
@@ -842,6 +852,45 @@
     margin-left: 5%;
 
 }
+
+.mari{
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 1.629rem;
+    float: none;
+    margin-top: 25rem;
+    margin-left: 15px;
+    opacity: 0.5;
+}
+
+.mar{
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 1.629rem;
+    float: none;
+    margin-top: -6rem;
+    margin-left: 1px;
+    opacity: 0.8;
+    padding-top: 12px;
+}
+
+.lov{
+    position: absolute;
+    left: 3.11%;
+    right: -40.47%;
+    top: 7.99%;
+    bottom: 19.64%;
+    display: flex;
+    gap: 3.2vh;
+}
+
+.madam{
+    background: none;
+    padding-left: 18px;  
+    margin-top: -34px;
+    opacity: 0.5;
+}
+
 .left-image-text-title{
     font-size: 35px;
     line-height: 130%;
@@ -1164,10 +1213,23 @@
 }
 .footer-mt{
     margin-top: 40px;
+    opacity: 0.5;
 }
 .ali{
-    padding-left: 1px;
+    position: absolute;
+    left: 3.11%;
+    right: -40.47%;
+    top: 97.3%;
+    bottom: 19.64%;
+    display: flex;
+    gap: 6.2vh;
+    margin-top: 40px;
 }
+
+.nife{
+    margin-bottom: 50px;
+}
+
 // ========end of footer mobile css============
 .margin-bottom{
     margin-bottom: 15px;

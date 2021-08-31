@@ -13,7 +13,6 @@
     // border-top: 1px solid rgba(117,50,29,.13);
     padding: 3.5625rem 0;
     text-align: center;
-    padding: 37px;
 
     .footer-title {
         // background-image: url(/assets/images/Full-logo-horizontal-white-trimmed.png);
@@ -62,7 +61,7 @@
         line-height: 1.686rem;
 
         @media (max-width: 799px) {
-            font-size: 0.929rem;
+            font-size: 15px;
             letter-spacing: 0;
             line-height: 1.629rem;
             float: none;
@@ -71,7 +70,8 @@
         }
 
         @media (max-width: 399px) {
-            margin-top: 0;
+            margin-right: 227px;
+            margin-top: 20px;
         }
     }
 
@@ -95,17 +95,19 @@
         }
         @media (max-width: 799px) {
             font-weight: 500;
-            font-size: 0.929rem;
+            font-size: 20px;
             letter-spacing: 0;
             line-height: 1.629rem;
-            // flex-direction: column;
             justify-content: center;
+            display: table;
+            text-align: left;
         }
 
         > li {
             // @media (min-width: 800px) {
             &:not(:last-child) {
                 margin-right: 1rem;
+                margin-bottom: 5px;
             }
             // }
         }
@@ -132,5 +134,16 @@
 @media (max-width: 399px) {
     .show-mobile-xs {
         display: flex !important;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .madam{
+        background: none;
+    }
+
+    .mardan{
+        margin-top: 227px;
     }
 }
