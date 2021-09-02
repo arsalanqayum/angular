@@ -7,9 +7,12 @@ import { Component, OnInit, ElementRef, ViewChild, AfterContentInit, AfterViewIn
 })
 export class NotFoundComponent implements OnInit {
 
+  menu:boolean=false;
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  
 
 }

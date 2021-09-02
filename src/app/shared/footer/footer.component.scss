@@ -11,7 +11,7 @@
     background: rgba(0, 0, 0, 0.5);
     height: 16.5vh;
     // border-top: 1px solid rgba(117,50,29,.13);
-    padding: 3.5625rem 0;
+    padding: 2.2rem 0;
     text-align: center;
 
     .footer-title {
@@ -59,6 +59,7 @@
         font-size: 1.3rem;
         letter-spacing: 0;
         line-height: 1.686rem;
+        color: rgba(255, 255, 255, 0.45);
 
         @media (max-width: 799px) {
             font-size: 15px;
@@ -72,6 +73,7 @@
         @media (max-width: 399px) {
             margin-right: 227px;
             margin-top: 20px;
+            padding-bottom: 40px;
         }
     }
 
@@ -101,6 +103,8 @@
             justify-content: center;
             display: table;
             text-align: left;
+            padding: 20px 0px;
+            
         }
 
         > li {
@@ -112,7 +116,7 @@
             // }
         }
         a {
-            color: white;
+            color:  rgba(255, 255, 255, 0.45);
         }
         a:hover{
             color: #665BFF;
@@ -141,6 +145,13 @@
 @media (max-width: 600px) {
     .madam{
         background: none;
+        margin-left: 25px;
+    }
+    .menu-sm-nav-item{
+        background: none;
+        opacity: 0.5;
+        margin-top: 30px;
+        margin-left: 20px;
     }
 
     .mardan{

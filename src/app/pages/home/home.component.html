@@ -19,9 +19,13 @@
                 </a>
             </li>
             <li class="nav-item disktop-hide" style="float: right !important; margin-top: -15px;" (click)="menu=!menu">
-                <a href="javascript:void(0);" class="nav-link">
+                <a *ngIf="menu==false" href="javascript:void(0);" class="nav-link">
                     <img src="/assets/images/ui-assets/menu-icon.png" style="height: 50px;" />
-                </a></li>
+                </a>
+                <a *ngIf="menu==true" href="javascript:void(0);" class="nav-link">
+                    <img src="/assets/images/ui-assets/menu-icon-expand.png" style="height: 50px;" />
+                </a>
+            </li>
         </ul>
 
         <ul *ngIf="menu==true" class="nav-mobile">
@@ -37,8 +41,8 @@
                 </h1>
             </div>
 
-            <div class="content footer madam">
-                <app-footer class="nife"></app-footer>
+            <div class="content footer ">
+                <app-footer></app-footer>
             </div>
 
             <li class="nav-item-mobile">
@@ -56,7 +60,7 @@
                 </a>
             </li>
 
-            <div class="social-media-footer-container lov">
+            <div class="social-media-footer-container home-social-media-top-container">
                 <a href="https://www.instagram.com/stageverse" target="blank"
                     class="social-media-footer links-a"><img
                         src="assets/images/ui-assets/instagram.png" alt="instagram icon"></a>
@@ -73,7 +77,7 @@
                         src="assets/images/ui-assets/Frame1846.svg" alt="twitter icon"></a>
             </div>
 
-            <div class="footer-copyright mari">© 2021 Stage, Inc.</div>
+            <div class="footer-copyright copy-right-pos">© 2021 Stage, Inc.</div>
 
         </ul>
 
@@ -91,7 +95,7 @@
                         <div class="left-image-text-box">
                             <p class="left-image-text-subtitle">Stageverse is an NFT-based world of beautifully designed
                                 3D venues where friends and communities connect, grow, have fun, and share culture.</p>
-                            <a class="left-image-text-btn btn-position" href="javascript:void(0);">Get the App <img
+                            <a class="left-image-text-btn btn-position" href="#downloads">Get the App <img
                                     src="/assets/images/ui-assets/black-arrow.png" /></a>
 
                         </div>
@@ -102,7 +106,7 @@
                         <div class="example-collection-cell _1of2">
                             <div class="example-collection-item right-two">
                                 <div class="right-header-content">
-                                    <a class="right-image-text-btn" href="javascript:void(0);">Explore Events <img
+                                    <a class="right-image-text-btn" href="#events">Explore Events <img
                                             src="/assets/images/ui-assets/arrow-white.png" /></a>
                                 </div>
                             </div>
@@ -110,7 +114,7 @@
                         <div class="example-collection-cell _1of2">
                             <div class="example-collection-item right-four">
                                 <div class="right-header-content">
-                                    <a class="right-image-text-btn" href="javascript:void(0);">Explore Venues <img
+                                    <a class="right-image-text-btn" href="#venues">Explore Venues <img
                                             src="/assets/images/ui-assets/arrow-white.png" /></a>
                                 </div>
                             </div>
@@ -120,7 +124,7 @@
                         <div class="example-collection-cell _1of2">
                             <div class="example-collection-item right-three">
                                 <div class="right-header-content">
-                                    <a class="right-image-text-btn" href="javascript:void(0);"> Explore Drops <img
+                                    <a class="right-image-text-btn" href="#drops"> Explore Drops <img
                                             src="/assets/images/ui-assets/arrow-white.png" /></a>
                                 </div>
                             </div>
@@ -128,7 +132,7 @@
                         <div class="example-collection-cell _1of2">
                             <div class="example-collection-item right-one">
                                 <div class="right-header-content">
-                                    <a class="right-image-text-btn" href="javascript:void(0);">Explore Memberships <img
+                                    <a class="right-image-text-btn" href="#memberships">Explore Memberships <img
                                             src="/assets/images/ui-assets/arrow-white.png" /></a>
                                 </div>
                             </div>
@@ -139,7 +143,7 @@
         </div>
         <div>
             <div class="container title-container">
-                <h1 class="title-sm">Events</h1>
+                <h1 class="title-sm" id="events">Events</h1>
                 <h1 class="title-lg">Explore what’s happening</h1>
             </div>
         </div>
@@ -227,7 +231,7 @@
         </owl-carousel-o>
         <div>
             <div class="container title-container">
-                <h1 class="title-sm">Venues</h1>
+                <h1 class="title-sm" id="venues">Venues</h1>
                 <h1 class="title-lg">Explore Beautiful social spaces</h1>
             </div>
         </div>
@@ -263,7 +267,7 @@
 
         <div>
             <div class="container title-container">
-                <h1 class="title-sm">Drops</h1>
+                <h1 class="title-sm" id="drops">Drops</h1>
                 <h1 class="title-lg">Collect nft-based avatars and digital goods</h1>
             </div>
         </div>
@@ -296,7 +300,7 @@
         </owl-carousel-o>
         <div>
             <div class="container title-container">
-                <h1 class="title-sm">Memberships</h1>
+                <h1 class="title-sm" id="memberships">Memberships</h1>
                 <h1 class="title-lg">The first metaverse social club </h1>
             </div>
         </div>
@@ -337,7 +341,7 @@
                 <div class="example-collection-cell">
                     <div class="video-container ">
                         <video class="video-size" autoplay loop muted>
-                            <source src="/assets/images/ui-assets/video-1.mp4" type="video/mp4" />
+                            <source src="/assets/images/ui-assets/video-3.mp4" type="video/mp4" />
                         </video>
                         <div class="overlay stageverse-content ">
                             <h4 class="stage-heading">Customizable Avatars</h4>
@@ -378,7 +382,7 @@
                 <div class="example-collection-cell">
                     <div class="video-container ">
                         <video class="video-size" autoplay loop muted>
-                            <source src="/assets/images/ui-assets/video-3.mp4" type="video/mp4" />
+                            <source src="/assets/images/ui-assets/video-1.mp4" type="video/mp4" />
                         </video>
                         <div class="overlay stageverse-content ">
                             <h4 class="stage-heading">Spatial Voice Chat</h4>
@@ -448,7 +452,7 @@
         </div>
         <div>
             <div class="container title-container">
-                <h1 class="title-sm">DOWNLOAD</h1>
+                <h1 class="title-sm" id="downloads">DOWNLOAD</h1>
                 <h1 class="title-lg">GET THE STAGEVERSE APP AND JUMP IN</h1>
             </div>
         </div>
@@ -523,7 +527,7 @@
                                 <li><a routerLink="/press" class="links-a">PRESS</a></li>
                                 <li><a routerLink="/company" class="links-a">COMPANY</a></li>
                                 <li><a routerLink="/blog" class="links-a">BLOG</a></li>
-                                <li><a routerLink="/support" class="links-a">SUPPORT</a></li>
+                                <li><a href="https://support.stageverse.com/hc/en-us" target="_blank" class="links-a">SUPPORT</a></li>
                             </h1>
                         </div>
                     </div>
@@ -537,7 +541,7 @@
                                 of people, creators, communities and brands. The collective use Stageverse to socialize,
                                 connect, create, discover, grow, elevate creativity and move culture forward.</p>
 
-                            <div style="display: flex;flex-direction: row; margin-top: 7vh;">
+                            <div class="footer-input-position">
 
                                 <div class="leftinput">
 
@@ -558,7 +562,7 @@
                                         at any time.</p>
 
                                 </div>
-                                <div class="social-media-footer-container ali">
+                                <div class="social-media-footer-container footer-social-align">
                                     <a href="https://www.instagram.com/stageverse" target="blank"
                                         class="social-media-footer links-a"><img
                                             src="assets/images/ui-assets/instagram.png" alt="instagram icon"></a>
@@ -582,10 +586,9 @@
         </div>
     </div>
 
-    <div class="content footer footer-mt madam">
-        <app-footer class="nife"></app-footer>
-    <!-- <div class="footer-copyright about mar">© 2021 Stage, Inc.</div> -->
-
+    <div class="content footer footer-mt" >
+        <app-footer></app-footer>
+            <div class="footer-copyright copy-right-bottom mobile">© 2021 Stage, Inc.</div>
     </div>
 
 </div>
