@@ -32,7 +32,7 @@ export class ModalService {
     this.overlayCloseStarted = new EventEmitter<void>();
     this.overlayCloseEnded = new EventEmitter<void>();
   }
-
+  
   // closeAllModals() {
   //   console.log('closeAllModals');
   //   for (let x = 0; x < this.openOverlayViews; x++) {

@@ -4,6 +4,8 @@ import { PubSubService } from 'src/app/core/pub-sub.service';
 import { BackgroundService } from 'src/app/shared/background/background.service';
 import { ModalService } from 'src/app/shared/overlay/modal.service';
 import { OverlayViewEarlyAccessComponent } from 'src/app/shared/overlay/overlay-view-early-access/overlay-view-early-access.component';
+
+import { EmailService } from '../../../../services/email/email.service';
 @Component({
   selector: 'app-muse',
   templateUrl: './muse.component.html',
@@ -84,7 +86,8 @@ export class MuseComponent implements OnInit {
   constructor(private _pubSubService: PubSubService,
     private _renderer: Renderer2,
     private _backgroundService: BackgroundService,
-    private _modalService: ModalService) { }
+    private _modalService: ModalService,
+    public _mail:EmailService) { }
 
 
   ngOnInit() {

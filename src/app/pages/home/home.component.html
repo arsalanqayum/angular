@@ -95,7 +95,7 @@
                         <div class="left-image-text-box">
                             <p class="left-image-text-subtitle">Stageverse is an NFT-based world of beautifully designed
                                 3D venues where friends and communities connect, grow, have fun, and share culture.</p>
-                            <a class="left-image-text-btn btn-position" href="#downloads">Get the App <img
+                            <a class="left-image-text-btn btn-position" (click)="scroll('downloads')" href="javascript:void(0);" >Get the App <img
                                     src="/assets/images/ui-assets/black-arrow.png" /></a>
 
                         </div>
@@ -106,7 +106,7 @@
                         <div class="example-collection-cell _1of2">
                             <div class="example-collection-item right-two">
                                 <div class="right-header-content">
-                                    <a class="right-image-text-btn" href="#events">Explore Events <img
+                                    <a class="right-image-text-btn" (click)="scroll('events')" href="javascript:void(0);">Explore Events <img
                                             src="/assets/images/ui-assets/arrow-white.png" /></a>
                                 </div>
                             </div>
@@ -114,7 +114,7 @@
                         <div class="example-collection-cell _1of2">
                             <div class="example-collection-item right-four">
                                 <div class="right-header-content">
-                                    <a class="right-image-text-btn" href="#venues">Explore Venues <img
+                                    <a class="right-image-text-btn" (click)="scroll('venues')" href="javascript:void(0);" >Explore Venues <img
                                             src="/assets/images/ui-assets/arrow-white.png" /></a>
                                 </div>
                             </div>
@@ -124,7 +124,7 @@
                         <div class="example-collection-cell _1of2">
                             <div class="example-collection-item right-three">
                                 <div class="right-header-content">
-                                    <a class="right-image-text-btn" href="#drops"> Explore Drops <img
+                                    <a class="right-image-text-btn" (click)="scroll('drops')" href="javascript:void(0);" > Explore Drops <img
                                             src="/assets/images/ui-assets/arrow-white.png" /></a>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@
                         <div class="example-collection-cell _1of2">
                             <div class="example-collection-item right-one">
                                 <div class="right-header-content">
-                                    <a class="right-image-text-btn" href="#memberships">Explore Memberships <img
+                                    <a class="right-image-text-btn"  (click)="scroll('memberships')" href="javascript:void(0);">Explore Memberships <img
                                             src="/assets/images/ui-assets/arrow-white.png" /></a>
                                 </div>
                             </div>
@@ -314,7 +314,7 @@
                             <p class="membership-subtitle">Apply to be part of the most exclusive members club of the
                                 metaverse and gain access to events, perks and more. + ownership (first members club
                                 owned by its members) + buy, sell, trade, collect/own</p>
-                            <a class="right-image-text-btn btn-position" href="javascript:void(0);">Get an Invite<img
+                            <a class="right-image-text-btn btn-position" (click)="openDialog()" href="javascript:void(0);">Get an Invite<img
                                     src="/assets/images/ui-assets/arrow-white.png" /></a>
 
                         </div>
@@ -336,93 +336,79 @@
                 <h1 class="title-lg">Expand your world on stageverse </h1>
             </div>
         </div>
+        <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
         <owl-carousel-o [options]="customOptions">
             <ng-template class="example-collection-grid" carouselSlide>
                 <div class="example-collection-cell">
-                    <div class="video-container ">
+                    <div class="video-container1 ">
                         <video class="video-size" autoplay loop muted>
                             <source src="/assets/images/ui-assets/video-3.mp4" type="video/mp4" />
                         </video>
-                        <div class="overlay stageverse-content ">
-                            <h4 class="stage-heading">Customizable Avatars</h4>
-                            <p class="stageverse-text stage-paragraph">Flex your style with full-body, expressive
-                                avatars.</p>
+                        <div class="overlay1" >
+                            <div class="stageverse-content1">
+                                <h4 class="stage-heading">Customizable Avatars</h4>
+                                <p class="stageverse-text stage-paragraph">Flex your style with full-body, expressive
+                                    avatars.</p>
+                            </div>
+
                         </div>
                     </div>
-                    <!-- <div class="slide stageverse-1">
-                    <div class="stageverse-content ">
-                        <h4 class="stage-heading">Customizable Avatars</h4>
-                        <p class="stageverse-text stage-paragraph">Flex your style with full-body, expressive avatars.</p>
-                    </div>
-                </div> -->
                 </div>
             </ng-template>
             <ng-template class="example-collection-grid" carouselSlide>
                 <div class="example-collection-cell">
-                    <div class="video-container ">
+                    <div class="video-container1 ">
                         <video class="video-size" autoplay loop muted>
                             <source src="/assets/images/ui-assets/video-2.mp4" type="video/mp4" />
                         </video>
-                        <div class="overlay stageverse-content ">
-                            <h4 class="stage-heading">Friends & Parties</h4>
-                            <p class="stageverse-text stage-paragraph">Meet up and explore together. Can we add one more
-                                line here?</p>
+                        <div class="overlay1" >
+                            <div class="stageverse-content1 ">
+                                <h4 class="stage-heading">Friends & Parties</h4>
+                                <p class="stageverse-text stage-paragraph">Meet up and explore together. Can we add one more
+                                    line here?</p>
+                            </div>
+
                         </div>
                     </div>
-                    <!-- <div class="slide stageverse-2">
-                    <div class="stageverse-content ">
-                        <h4 class="stage-heading">Friends & Parties</h4>
-                        <p class="stageverse-text stage-paragraph">Meet up and explore together. Can we add one more line here?</p>
-
-                    </div>
-                    </div> -->
                 </div>
             </ng-template>
             <ng-template class="example-collection-grid" carouselSlide>
                 <div class="example-collection-cell">
-                    <div class="video-container ">
+                    <div class="video-container1 ">
                         <video class="video-size" autoplay loop muted>
                             <source src="/assets/images/ui-assets/video-1.mp4" type="video/mp4" />
                         </video>
-                        <div class="overlay stageverse-content ">
-                            <h4 class="stage-heading">Spatial Voice Chat</h4>
-                            <p class="stageverse-text stage-paragraph">Talk and connect with others in
-                                beautifully-designed 3D spaces</p>
+                        <div class="overlay1" >
+                            <div class="stageverse-content1 ">
+                                <h4 class="stage-heading">Spatial Voice Chat</h4>
+                                <p class="stageverse-text stage-paragraph">Talk and connect with others in
+                                    beautifully-designed 3D spaces</p>
+                            </div>
+
                         </div>
                     </div>
-                    <!-- <div class="slide stageverse-3">
-                    <div class="stageverse-content ">
-                        <h4 class="stage-heading">Spatial Voice Chat</h4>
-                        <p class="stageverse-text stage-paragraph">Talk and connect with others in beautifully-designed 3D spaces</p>
-
-                    </div>
-                </div> -->
                 </div>
             </ng-template>
             <ng-template class="example-collection-grid" carouselSlide>
                 <div class="example-collection-cell">
-                    <div class="video-container ">
+                    <div class="video-container1 ">
                         <video class="video-size" autoplay loop muted>
                             <source src="/assets/images/ui-assets/video-4.mp4" type="video/mp4" />
                         </video>
-                        <div class="overlay stageverse-content ">
-                            <h4 class="stage-heading">Virtual Goods</h4>
-                            <p class="stageverse-text stage-paragraph">Play and express yourself with interactive toys
-                                and collectible items</p>
+                        <div class="overlay1" >
+                            <div class="stageverse-content1 ">
+                                <h4 class="stage-heading">Virtual Goods</h4>
+                                <p class="stageverse-text stage-paragraph">Play and express yourself with interactive toys
+                                    and collectible items</p>
+                            </div>
                         </div>
+                       
                     </div>
-                    <!-- <div class="slide stageverse-4">
-                    <div class="stageverse-content ">
-                        <h4 class="stage-heading">Virtual Goods</h4>
-                        <p class="stageverse-text stage-paragraph">Play and express yourself with interactive toys and collectible items</p>
-
-                    </div>
-                </div> -->
                 </div>
             </ng-template>
 
         </owl-carousel-o>
-
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
         <div>
             <div class="container title-container">
                 <h1 class="title-sm">COMMUNITY</h1>
@@ -515,75 +501,7 @@
         </div>
 
         <!-- =======================footer============================================================================================== -->
-        <div>
-            <div class="example-collection-grid footer-sm">
-                <div class="example-collection-cell">
-                    <div class="example-collection-item">
-                        <div class="logo-container">
-                            <img class="footer-logo" src="assets/images/ui-assets/Logo-comb.png" />
-                            <h1 class="footer-big-text">
-                                <li><a routerLink="/careers" class="links-a">CAREERS</a></li>
-                                <li><a routerLink="/creators" class="links-a">CREATORS</a></li>
-                                <li><a routerLink="/press" class="links-a">PRESS</a></li>
-                                <li><a routerLink="/company" class="links-a">COMPANY</a></li>
-                                <li><a routerLink="/blog" class="links-a">BLOG</a></li>
-                                <li><a href="https://support.stageverse.com/hc/en-us" target="_blank" class="links-a">SUPPORT</a></li>
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="example-collection-cell">
-                    <div class="example-collection-item">
-                        <div class="footer-sub-contianer">
-                            <h2 class="footer-sub-heading">FUTURE CULTURE HAPPENS HERE.</h2>
-                            <p class="footer-p-text">Stageverse is an NFT-based metaverse of beautifully designed 3D
-                                spaces, called Stages, that aims to connect a vibrant, diverse and pioneering collective
-                                of people, creators, communities and brands. The collective use Stageverse to socialize,
-                                connect, create, discover, grow, elevate creativity and move culture forward.</p>
-
-                            <div class="footer-input-position">
-
-                                <div class="leftinput">
-
-                                </div>
-
-                                <div style="width: 100%;">
-                                    <input type="text" class="search" placeholder="Get News & Updates" />
-                                </div>
-                                <div class="input-icon"><img src="assets/images/ui-assets/arrow-white.png" /></div>
-                            </div>
-                            <div class="footer-social-media">
-                                <div class="footer-small-text">
-                                    <p style="font-size: 1.9vh;">By signing up you are agreeing to the Stageverse <a
-                                            routerLink="/terms-of-service" class="links-a"
-                                            style="text-decoration: underline;">Terms of Service</a> and Stageverse <a
-                                            routerLink="/privacy" class="links-a"
-                                            style="text-decoration: underline;">Privacy Policy</a>. You may unsubscribe
-                                        at any time.</p>
-
-                                </div>
-                                <div class="social-media-footer-container footer-social-align">
-                                    <a href="https://www.instagram.com/stageverse" target="blank"
-                                        class="social-media-footer links-a"><img
-                                            src="assets/images/ui-assets/instagram.png" alt="instagram icon"></a>
-                                    <a href=" https://discord.com/invite/uhMjf7sF6Z" target="blank"
-                                        class="social-media-footer links-a"><img src="assets/images/ui-assets/panda.png"
-                                            alt="social icon"></a>
-                                    <a href="https://www.linkedin.com/company/stageverse" target="blank"
-                                        class="social-media-footer links-a"><img
-                                            src="assets/images/ui-assets/linkedIn.png" alt="linkedIn icon"></a>
-                                    <a href="https://twitter.com/thestageverse" target="blank"
-                                        class="social-media-footer links-a"><img
-                                            src="assets/images/ui-assets/twitter.png" alt="twitter icon"></a>
-                                    <a href="#" class="social-media-footer links-a"><img
-                                            src="assets/images/ui-assets/Frame1846.svg" alt="twitter icon"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+       <app-footer-two></app-footer-two>
     </div>
 
     <div class="content footer footer-mt" >

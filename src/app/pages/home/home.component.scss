@@ -8,6 +8,7 @@
 }
 .gradient-2{
     position: relative;
+
     top: 53.9vh;
     background: linear-gradient(
 0deg
@@ -393,33 +394,29 @@
       text-align: left;
       margin-left: 6%;
   }
-  .stageverse-content{
-      position: relative;
-      top: 58.5vh;
   
-  }
-  
-.video-container { 
-      position:relative;
-      
-     }
 .video-size{
     width: 99%;
     height: 75vh;
     object-fit: cover;
 }
-.video-container  video {
-    position:relative;
-    z-index:0;
-}
-.overlay {
+.overlay1 {
     position: absolute;
-    z-index: 1;
+    bottom: 1.5%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.265625) 70.17%, rgba(0, 0, 0, 0) 100%);
     transform: rotate(0deg);
-    padding-bottom: 26px;
-    padding-left: 30px;
+    width: 100%;
 }
+.stageverse-content1{
+    padding-bottom: 35px;
+    padding-left: 25px;
+    width: 40.68vh;
+
+}
+.video-container1{ 
+    
+}
+
   .stageverse-1{
       background-image: url('/assets/images/ui-assets/video-1.gif');
       background-size: 100% 100%; 
@@ -531,18 +528,17 @@
 
 }
 .stage-heading{
-    
     font-weight: bold;
     font-size: 21px;
-    line-height: 4rem;
+    line-height: 2.5rem;
     text-transform: uppercase;
     padding-left: 20px;
-
 }
+
 .stage-paragraph{
     font-weight: normal;
     font-size: 24px;
-    letter-spacing: 0;
+    letter-spacing: -0.01em;
     line-height: 2.4rem;
     width: 94%;
     margin-left: 20px;
@@ -598,11 +594,12 @@
 }
 
 .gradient-2{
-    height: 10%;
+    top: 46.2vh;
+    height: 23%;
 }
 
 .simulation-content-venues{
-    padding-top: 0px;
+    padding-top: 60px;
 }
 
 .left-image-text-btn{
@@ -717,18 +714,18 @@
     height: 60vh;
     background-size: cover;
 }
-.stageverse-content{
-    top: 58.5vh;
-    margin-left: -3px;
-    padding-left: 6px;
-    padding-right: 45px;
-    padding-bottom: 73px;
+.overlay1{
+    bottom: 2%;
+}
+.stageverse-content1{
+    padding-bottom: 25px;
+    padding-left: 10px;
+    width: 40.68vh;
 }
 .stageverse-text{
-    width: 230px ;
+    width: 265px;
     font-size: 20px;
     line-height: 110%;
-    letter-spacing: -0.01em;
 }
 .stage-heading{
     font-size: 12px;

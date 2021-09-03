@@ -69,6 +69,10 @@ import { PageComponent } from './page/page.component';
 import { OverlayViewApiVideoComponent } from './overlay/overlay-view-api-video/overlay-view-api-video.component';
 import { OverlayViewVimeoVideoComponent } from './overlay/overlay-view-vimeo-video/overlay-view-vimeo-video.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ModalComponent } from './modal/modal.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { FooterTwoComponent } from './footer-two/footer-two.component';
 // import { CreditCardDirectivesModule } from 'angular-cc-library';
 
 /**
@@ -82,7 +86,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
-    CarouselModule
+    CarouselModule,
+    MatButtonModule,
+    MatDialogModule
   ],
   declarations: [
     // ToolbarComponent,
@@ -146,7 +152,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     OverlayViewYoutubeVideoComponent,
     PageComponent,
     OverlayViewApiVideoComponent,
-    OverlayViewVimeoVideoComponent
+    OverlayViewVimeoVideoComponent,
+    ModalComponent,
+    FooterTwoComponent
   ],
   exports: [
     // ToolbarComponent,
@@ -212,12 +220,15 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     OverlayViewYoutubeVideoComponent,
     PageComponent,
     OverlayViewApiVideoComponent,
-    OverlayViewVimeoVideoComponent
+    OverlayViewVimeoVideoComponent,
+    ModalComponent,
+    FooterTwoComponent
   ],
   entryComponents: [
     OverlayComponent,
     OverlayViewComponent,
-    OverlayViewLoginComponent
+    OverlayViewLoginComponent,
+    ModalComponent
   ]
 })
 export class SharedModule {

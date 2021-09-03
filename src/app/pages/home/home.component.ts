@@ -11,14 +11,17 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 // import * as Stats from 'stats-js';
 // import videojs from 'video.js';
 import { ElementRef, Renderer2, ViewChild } from '@angular/core';
+
+import { EmailService } from '../../services/email/email.service';
 import { throwError } from 'rxjs';
 import { ThrowStmt } from '@angular/compiler';
-
+import { ModalComponent } from 'src/app/shared/modal/modal.component';
 // const mediaSources = require('videojs-contrib-media-sources'); increase browser support with MSE polyfill
 // require('videojs-contrib-hls'); // auto attaches hlsjs handler
 // const hlsjs = require('videojs-contrib-hls.js'); auto attaches hlsjs handler
 // const panorama = require('videojs-panorama');
 
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -64,7 +67,7 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('experiencesSection') experiencesSection: ElementRef;
   @ViewChild('experiencesBackground') experiencesBackground: ElementRef;
   customOptions: OwlOptions = {
-   
+
     loop: false,
     mouseDrag: true,
     touchDrag: true,
@@ -128,11 +131,15 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     },
    
   }
+  message:string=localStorage.getItem('message');
+  emailAddress:string='';
   menu:boolean=false;
+  loader:boolean=false;
   constructor(private _pubSubService: PubSubService,
     private _renderer: Renderer2,
     private _backgroundService: BackgroundService,
-    private _modalService: ModalService) { }
+    private _modalService: ModalService,
+    public _mail:EmailService) { }
 
   // @HostListener('window:scroll', ['$event'])
   // onWindowScroll(event) {
@@ -157,30 +164,41 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     this.menu==false ? this.menu=true : this.menu=false;
   }
 
+  scroll(id) {
+    console.log(`scrolling to ${id}`);
+    let el = document.getElementById(id);
+    el.scrollIntoView();
+  }
+  sendMail(){
+    if(this.validateEmail(this.emailAddress)){
+    this.loader=true
+    this._mail.PutEmailList(this.emailAddress).subscribe(res=>{
+      console.log(res);
+      this.loader=false
+      this.emailAddress='';
+      localStorage.setItem('message',"Thanks for signing up! We’ll keep you up-to-date with the latest news.")
+      this.message="Thanks for signing up! We’ll keep you up-to-date with the latest news.";
+    })
+  }
+  }
+  validateEmail(email) {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
   handleOverlayOpen() {
     this.isOverlayOpen = true;
-    this.heroVideo.nativeElement.pause();
+    // this.heroVideo.nativeElement.pause();
     // this.trailerVideo.nativeElement.pause();
   }
   handleOverlayClose() {
     this.isOverlayOpen = false;
-    this.heroVideo.nativeElement.play();
+    // this.heroVideo.nativeElement.play();
     // this.trailerVideo.nativeElement.play();
   }
 
   showEarlyAccess(): void {
     // this.handleOverlayOpen();
-    this._modalService.showModal(OverlayViewEarlyAccessComponent, {
-      allowOverlayClick: true,
-      modalElementId: 'early-access-modal',
-      showCloseButton: true,
-      data: {
-        modalTitle: 'This is the sample modal'
-      },
-      whenClosed: () => {
-        // this.handleOverlayClose();
-      }
-    });
+    
   }
 
   playFeatureTrailer(): void {
@@ -386,7 +404,20 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     }
 
   }
-
+  openDialog() {
+    this.handleOverlayOpen();
+    this._modalService.showModal(OverlayViewEarlyAccessComponent, {
+      allowOverlayClick: false,
+      modalElementId: 'early-access-modal',
+      showCloseButton: false,
+      data: {
+        modalTitle: 'This is the sample modal'
+      },
+      whenClosed: () => {
+        // this.handleOverlayClose();
+      }
+    });
+  }
   private handleScrollForManifestoCopy(scrollY: number) {
     const bottomPageOffsetBeforeApplyingTransform = 50;
     const scrollTop = scrollY;

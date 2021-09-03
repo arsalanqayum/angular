@@ -28,6 +28,7 @@ export class EmailService {
 }
 
   PutEmailList(email:string): Observable<ApiResponse> {
+    console.log('!!!!!!!!!!!!!')
     let headers = new HttpHeaders();
     this.createHeaders(headers);
     return this.http.put(this.ApiUrl + this.EndPoint + '/' + email + '/stageverse-optin',null,
