@@ -64,7 +64,7 @@
     color: #fff;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1920px) {
     .Page > .foot {
         height: 0;
     }
@@ -120,7 +120,7 @@
     padding-top: 7rem;
     padding-bottom: 5.5rem;
 }
-@media (min-width: 800px) {
+@media (min-width: 1920px) {
     .Overlay > .body {
         flex-grow: 0;
         align-self: center;
@@ -313,14 +313,14 @@
 }
 
 .Overlay > .body > .content.form {
-    background-color: #f5f5f5;
-    color: #000;
-    border-radius: 2rem;
+    background-color: #665BFF;
+    color: #ffffff;
+    border-radius: 1rem;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.04);
 }
 @media (min-width: 800px) {
     .Overlay > .body > .content.form {
-        width: 33rem;
+        width: 49vh;
         padding: 2.85rem;
     }
     .Overlay > .body > .content.form.wide {
@@ -357,7 +357,7 @@
 .Overlay > .body > .content.form .actions {
     margin: 2.5rem auto 0 auto;
 }
-@media (min-width: 800px) {
+@media (min-width: 2200px) {
     .Overlay > .body > .content.form .actions {
         width: 27.3rem;
     }
@@ -385,7 +385,7 @@
 .Overlay.overlay-hidden.hidden > .head > .content > a {
     transform: scale(0.5);
 }
-@media (min-width: 800px) {
+@media (min-width: 2200px) {
     .Overlay.overlay-hidden.hidden > .body > .content {
         transform: translateY(-6rem);
         opacity: 0;

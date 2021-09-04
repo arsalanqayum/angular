@@ -10,10 +10,13 @@
                 <a [routerLink]="" (click)="close()" action="close"> <span class="icon icon-close"
                         aria-hidden="true"></span> </a>
             </div>
-            <h1>Get Early Access</h1>
+            <div class="get-early-box">
+                <h1 class="get-early-text" >Get Early Access</h1>
+            </div>
+            
             <!-- <p>Be one the first to enter the Stageverse.
             </p> -->
-            <hr>
+            <!-- <hr> -->
             <div *ngIf="isSmsEnabled">
                 <div class="register-option">
                     <h2>Text "Stageverse" to:</h2>
@@ -25,7 +28,7 @@
                         </div>
                     </a>
                 </div>
-                <hr class="hide-mobile">
+                <!-- <hr class="hide-mobile"> -->
                 <div class="register-option hide-mobile">
                     <h2>Or, scan the QR code below:</h2>
                     <!-- wrap inside div to ensure height before image has loaded -->
@@ -40,7 +43,7 @@
             <div class="addtolist" *ngIf="!isSmsEnabled">
                 <input *ngIf="showEmailForm" type="email" [(ngModel)]="emailAddress" name="emailAddress"
                     class="my-input" id="email" placeholder="Email">
-                <button *ngIf="showEmailForm" (click)="addToList()" class="send-button">Join</button>
+                <button *ngIf="showEmailForm" (click)="addToList()" class="send-button"><img src="../../../../assets/images/ui-assets/arrow-white.png"></button>
             </div>
             <div>
                 <p class="statusmessage" name="statusMessage" [textContent]="statusMessage"></p>

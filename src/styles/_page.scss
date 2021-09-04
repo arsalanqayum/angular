@@ -25,7 +25,7 @@
 .Page > .body {
     align-self: top;
 }
-@media (min-width: 800px) {
+@media (min-width: 1800px) {
     .Page > .body > .content > .transition-content, 
     .Page > .body .layout-column > .content > .transition-content {
         transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -45,7 +45,7 @@
     align-self: flex-end;
     z-index: 100;
 }
-@media (min-width: 800px) {
+@media (min-width: 1800px) {
     .Page > .foot {
         height: 0;
     }
@@ -63,13 +63,13 @@
 .Page.Static > .body .layout-column > .content  {
     width: 100%;
 }
-@media (min-width: 800px) {
+@media (min-width: 1800px) {
     .Page.Static > .body > .content,
     .Page.Static > .body .layout-column > .content {
         padding-bottom: 8.5rem;
     }
 }
-@media (max-width: 799px) {
+@media (max-width: 1799px) {
     .Page.Static > .body > .content,
     .Page.Static > .body .layout-column > .content {
         padding-bottom: 5rem;
@@ -87,7 +87,7 @@
 .Page.Static > .body .layout-column > .content.centered {
     justify-content: center;
 }
-@media (min-width: 800px) {
+@media (min-width: 1800px) {
     .Page.Static > .body > .content.centered,
     .Page.Static > .body .layout-column > .content.centered {
         padding-left: 10.7rem;
@@ -101,14 +101,14 @@
         padding-right: 10.7vw;
     }
 }
-@media (max-width: 799px) {
+@media (max-width: 1799px) {
     .Page.Static > .body > .content.centered,
     .Page.Static > .body .layout-column > .content.centered {
         padding-left: 1rem;
         padding-right: 1rem;
     }
 }
-@media (min-width: 800px) {
+@media (min-width: 1800px) {
     .Page.Static > .body > .content.column > h2.heading-offset-top,
     .Page.Static > .body .layout-column > .content.column > h2.heading-offset-top {
         padding-top: 1rem;
@@ -126,7 +126,7 @@
     background-color: transparent;
     padding-bottom: 0;
 }
-@media (min-width: 800px) {
+@media (min-width: 1800px) {
     .Page.Static > .body > .content.hero {
         height: 39vw;
         padding-left: 10.7rem;
@@ -139,32 +139,32 @@
         padding-right: 10.7vw;
     }
 }
-@media (max-width: 799px) {
+@media (max-width: 1799px) {
     .Page.Static > .body > .content.hero {
         height: 98vw;
         padding-left: 1rem;
         padding-right: 1rem;
     }
 }
-@media (min-width: 800px) {
+@media (min-width: 1800px) {
     .Page.Static > .body > .content.hero .tagline {
         font-size: 6.7rem;
         line-height: 6.85rem;
         letter-spacing: -0.07rem;
     }
 }
-@media (max-width: 799px) {
+@media (max-width: 1799px) {
     .Page.Static > .body > .content.hero .tagline {
         font-size: 3.5rem;
         line-height: 3.5rem;
     }
 }
-@media (min-width: 800px) {
+@media (min-width: 1800px) {
     .Page.Static > .body > .content.hero + .content {
         padding-top: 7.5rem;
     }
 }
-@media (max-width: 799px) {
+@media (max-width: 1799px) {
     .Page.Static > .body > .content.hero + .content {
         padding-top: 4rem;
     }
@@ -202,14 +202,14 @@
     display: list-item;
     list-style: circle outside;
 }
-@media (min-width: 800px) {
+@media (min-width: 1800px) {
     .Page.Static > .body > .content .content-list > li,
     .Page.Static > .body .layout-column > .content .content-list > li {
         font-size: 1.3rem;
         line-height: 1.45rem;
     }
 }
-@media (max-width: 799px) {
+@media (max-width: 1799px) {
     .Page.Static > .body > .content .content-list > li,
     .Page.Static > .body .layout-column > .content .content-list > li {
         font-size: 1.15rem;
